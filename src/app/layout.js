@@ -1,28 +1,21 @@
-import localFont from "next/font/local";
 import "./globals.css";
-import StyleToggle from "@/app/components/StyleToggle";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import Client from "@/app/Client";
+import {cookies} from "next/headers";
+import dynamic from "next/dynamic";
 
 export const metadata = {
   title: "Cogworks",
 };
 
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
+  const cookieStore = await cookies();
+
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <StyleToggle />
-        {children}
+      <body>
+        <Client defaultTheme={cookieStore.get('theme').value}>
+          {children}
+        </Client>
       </body>
     </html>
   );

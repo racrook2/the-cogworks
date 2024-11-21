@@ -26,7 +26,7 @@ export default styled(Switch)(({ theme }) => ({
     },
   },
   '& .MuiSwitch-thumb': {
-    backgroundColor: '#001e3c',
+    backgroundColor: `${theme.palette.background.default}`,
     width: 32,
     height: 32,
     '&::before': {
@@ -41,7 +41,7 @@ export default styled(Switch)(({ theme }) => ({
       backgroundImage: `url('/solrock.png')`,
     },
     ...theme.applyStyles('dark', {
-      backgroundColor: '#003892',
+      backgroundColor: `${theme.palette.background.default}`,
     }),
   },
   '& .MuiSwitch-track': {
