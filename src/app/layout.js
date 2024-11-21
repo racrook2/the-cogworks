@@ -12,7 +12,7 @@ export default async function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <Client defaultTheme={cookieStore.get('theme').value}>
+        <Client defaultTheme={cookieStore.get('theme')?.value}>
           {children}
         </Client>
       </body>
