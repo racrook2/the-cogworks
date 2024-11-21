@@ -1,9 +1,9 @@
 'use client';
 
-import StyleToggle from "@/app/components/StyleToggle";
-import {createTheme, CssBaseline, ThemeProvider} from "@mui/material";
-import {useMemo, useState} from "react";
-import { CookiesProvider, useCookies } from "react-cookie";
+import StyleToggle from '@/app/components/StyleToggle';
+import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
+import { useMemo, useState } from 'react';
+import { CookiesProvider, useCookies } from 'react-cookie';
 
 export default function Client({ defaultTheme = 'light', children }) {
   const [mode, setMode] = useState(defaultTheme);
@@ -34,5 +34,5 @@ export default function Client({ defaultTheme = 'light', children }) {
         {children}
       </ThemeProvider>
     </CookiesProvider>
-  )
+  );
 }

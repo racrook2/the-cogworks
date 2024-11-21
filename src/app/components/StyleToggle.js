@@ -1,6 +1,6 @@
 'use client';
 
-import { styled, Switch } from "@mui/material";
+import { styled, Switch } from '@mui/material';
 
 export default styled(Switch)(({ theme }) => ({
   width: 62,
@@ -14,16 +14,16 @@ export default styled(Switch)(({ theme }) => ({
       color: '#fff',
       transform: 'translateX(22px)',
       '& .MuiSwitch-thumb:before': {
-        backgroundImage: `url(/lunatone.png)`,
+        backgroundImage: `url(/lunatone.png)`
       },
       '& + .MuiSwitch-track': {
         opacity: 1,
         backgroundColor: '#aab4be',
         ...theme.applyStyles('dark', {
-          backgroundColor: '#8796A5',
-        }),
-      },
-    },
+          backgroundColor: '#8796A5'
+        })
+      }
+    }
   },
   '& .MuiSwitch-thumb': {
     backgroundColor: `${theme.palette.background.default}`,
@@ -38,18 +38,18 @@ export default styled(Switch)(({ theme }) => ({
       top: 0,
       backgroundRepeat: 'no-repeat',
       backgroundPosition: 'center',
-      backgroundImage: `url('/solrock.png')`,
+      backgroundImage: `url('/solrock.png')`
     },
     ...theme.applyStyles('dark', {
-      backgroundColor: `${theme.palette.background.default}`,
-    }),
+      backgroundColor: `${theme.palette.background.default}`
+    })
   },
   '& .MuiSwitch-track': {
     opacity: 1,
     backgroundColor: '#aab4be',
     borderRadius: 20 / 2,
     ...theme.applyStyles('dark', {
-      backgroundColor: '#8796A5',
-    }),
-  },
+      backgroundColor: '#8796A5'
+    })
+  }
 }));

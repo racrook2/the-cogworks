@@ -1,10 +1,9 @@
-import "./globals.css";
-import Client from "@/app/Client";
-import {cookies} from "next/headers";
-import dynamic from "next/dynamic";
+import Client from '@/app/Client';
+import { cookies } from 'next/headers';
+import './globals.css';
 
 export const metadata = {
-  title: "Cogworks",
+  title: 'Cogworks'
 };
 
 export default async function RootLayout({ children }) {
