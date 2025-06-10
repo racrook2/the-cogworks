@@ -1,0 +1,1021 @@
+<div>
+    <canvas id="myChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const sets = [
+        "Base Set",
+        "Jungle",
+        "Fossil",
+        "Base Set 2",
+        "Team Rocket",
+        "Gym Heroes",
+        "Gym Challenge",
+        "Neo Genesis",
+        "Neo Discovery",
+        "Neo Revelation",
+        "Neo Destiny",
+        "Expedition",
+        "Aquapolis",
+        "Skyridge",
+        "Ruby & Sapphire",
+        "Sandstorm",
+        "Dragon",
+        "Team Magma vs Team Aqua",
+        "Hidden Legends",
+        "FireRed & LeafGreen",
+        "Team Rocket Returns",
+        "Deoxys",
+        "Emerald",
+        "Unseen Forces",
+        "Delta Species",
+        "Legend Maker",
+        "Holon Phantoms",
+        "Crystal Guardians",
+        "Dragon Frontiers",
+        "Power Keepers",
+        "Diamond & Pearl",
+        "Mysterious Treasures",
+        "Secret Wonders",
+        "Great Encounters",
+        "Majestic Dawn",
+        "Legends Awakened",
+        "Stormfront",
+        "Platinum",
+        "Rising Rivals",
+        "Supreme Victors",
+        "Arceus",
+        "HeartGold & SoulSilver",
+        "Unleashed",
+        "Undaunted",
+        "Triumphant",
+        "Call of Legends",
+        "Black & White",
+        "Emerging Powers",
+        "Noble Victories",
+        "Next Destinies",
+        "Dark Explorers",
+        "Dragons Exalted",
+        "Dragon Vault",
+        "Boundaries Crossed",
+        "Plasma Storm",
+        "Plasma Freeze",
+        "Plasma Blast",
+        "Legendary Treasures",
+        "Kalos Starter Set",
+        "XY",
+        "Flashfire",
+        "Furious Fists",
+        "Phantom Forces",
+        "Primal Clash",
+        "Double Crisis",
+        "Roaring Skies",
+        "Ancient Origins",
+        "BREAKthrough",
+        "BREAKpoint",
+        "Generations",
+        "Fates Collide",
+        "Steam Siege",
+        "Evolutions",
+        "Sun & Moon",
+        "Guardians Rising",
+        "Burning Shadows",
+        "Shining Legends",
+        "Crimson Invasion",
+        "Ultra Prism",
+        "Forbidden Light",
+        "Celestial Storm",
+        "Dragon Majesty",
+        "Lost Thunder",
+        "Team Up",
+        "Detective Pikachu",
+        "Unbroken Bonds",
+        "Unified Minds",
+        "Hidden Fates",
+        "Cosmic Eclipse",
+        "Sword & Shield",
+        "Rebel Clash",
+        "Darkness Ablaze",
+        "Champion's Path",
+        "Vivid Voltage",
+        "Shining Fates",
+        "Battle Styles",
+        "Chilling Reign",
+        "Evolving Skies",
+        "Celebrations",
+        "Fusion Strike",
+        "Brilliant Stars",
+        "Astral Radiance",
+        "Pokémon GO",
+        "Lost Origin",
+        "Silver Tempest",
+        "Crown Zenith",
+        "Scarlet & Violet",
+        "Paldea Evolved",
+        "Obsidian Flames",
+        "151",
+        "Paradox Rift",
+        "Paldean Fates",
+        "Temporal Forces",
+        "Twilight Masquerade",
+        "Shrouded Fable",
+        "Stellar Crown",
+        "Surging Sparks",
+        "Prismatic Evolutions",
+        "Journey Together",
+        "Destined Rivals"
+    ];
+
+    const data = {
+        "Base Set": {
+            "Basic": { "name": "Chansey", "hp": 120 },
+            "Stage 1": { "name": "Gyarados", "hp": 100 },
+            "Stage 2": { "name": "Charizard", "hp": 120 }
+        },
+        "Jungle": {
+            "Basic": { "name": "Kangaskhan", "hp": 90 },
+            "Stage 1": { "name": "Rhydon", "hp": 100 },
+            "Stage 2": { "name": "Nidoqueen", "hp": 90 }
+        },
+        "Fossil": {
+            "Basic": { "name": "Lapras", "hp": 80 },
+            "Stage 1": { "name": "Hypno", "hp": 90 },
+            "Stage 2": { "name": "Dragonite", "hp": 100 }
+        },
+        "Base Set 2": {
+            "Basic": { "name": "Chansey", "hp": 120 },
+            "Stage 1": { "name": "Gyarados", "hp": 100 },
+            "Stage 2": { "name": "Charizard", "hp": 120 }
+        },
+        "Team Rocket": {
+            "Basic": { "name": "Drowzee", "hp": 50 },
+            "Stage 1": { "name": "Dark Gyarados", "hp": 70 },
+            "Stage 2": { "name": "Dark Charizard", "hp": 80 }
+        },
+        "Gym Heroes": {
+            "Basic": { "name": "Brock's Onix", "hp": 100 },
+            "Stage 1": { "name": "Brock's Rhydon", "hp": 80 },
+            "Stage 2": { "name": "Brock's Golem", "hp": 90 }
+        },
+        "Gym Challenge": {
+            "Basic": { "name": "Rocket's Mewtwo", "hp": 70 },
+            "Stage 1": { "name": "Misty's Gyarados", "hp": 100 },
+            "Stage 2": { "name": "Giovanni's Nidoking", "hp": 120 }
+        },
+        "Neo Genesis": {
+            "Baby": { "name": "Pichu", "hp": 30 },
+            "Basic": { "name": "Lugia", "hp": 90 },
+            "Stage 1": { "name": "Steelix", "hp": 110 },
+            "Stage 2": { "name": "Feraligatr", "hp": 120 }
+        },
+        "Neo Discovery": {
+            "Baby": { "name": "Igglybuff", "hp": 30 },
+            "Basic": { "name": "Wobbuffet", "hp": 90 },
+            "Stage 1": { "name": "Espeon", "hp": 80 },
+            "Stage 2": { "name": "Politoed", "hp": 100 }
+        },
+        "Neo Revelation": {
+            "Baby": { "name": "Smoochum", "hp": 30 },
+            "Basic": { "name": "Shining Gyarados", "hp": 100 },
+            "Stage 1": { "name": "Blissey", "hp": 120 },
+            "Stage 2": { "name": "Ampharos", "hp": 90 }
+        },
+        "Neo Destiny": {
+            "Basic": { "name": "Shining Charizard", "hp": 100 },
+            "Stage 1": { "name": "Light Arcanine", "hp": 100 },
+            "Stage 2": { "name": "Light Dragonite", "hp": 100 }
+        },
+        "Expedition": {
+            "Baby": { "name": "Magby", "hp": 30 },
+            "Basic": { "name": "Chansey", "hp": 90 },
+            "Stage 1": { "name": "Cloyster", "hp": 80 },
+            "Stage 2": { "name": "Charizard", "hp": 120 }
+        },
+        "Aquapolis": {
+            "Baby": { "name": "Elekid", "hp": 30 },
+            "Basic": { "name": "Chansey", "hp": 100 },
+            "Stage 1": { "name": "Blissey", "hp": 120 },
+            "Stage 2": { "name": "Kingdra", "hp": 120 }
+        },
+        "Skyridge": {
+            "Baby": { "name": "Cleffa", "hp": 30 },
+            "Basic": { "name": "Moltres", "hp": 80 },
+            "Stage 1": { "name": "Steelix", "hp": 100 },
+            "Stage 2": { "name": "Machamp", "hp": 120 }
+        },
+        "Ruby & Sapphire": {
+            "Basic": { "name": "Wailmer", "hp": 80 },
+            "Stage 1": { "name": "Wailord", "hp": 120 },
+            "Stage 2": { "name": "Sceptile", "hp": 120 },
+            "Rulebox Basic": { "name": "Chansey ex", "hp": 120 }
+        },
+        "Sandstorm": {
+            "Basic": { "name": "Seviper", "hp": 80 },
+            "Stage 1": { "name": "Steelix", "hp": 100 },
+            "Stage 2": { "name": "Armaldo", "hp": 120 },
+            "Rulebox Stage 1": { "name": "Wailord ex", "hp": 200 },
+            "Rulebox Stage 2": { "name": "Typhlosion ex", "hp": 160 }
+        },
+        "Dragon": {
+            "Basic": { "name": "Torkoal", "hp": 80 },
+            "Stage 1": { "name": "Gyarados", "hp": 100 },
+            "Stage 2": { "name": "Flygon", "hp": 120 },
+            "Rulebox Basic": { "name": "Latios ex", "hp": 100 },
+            "Rulebox Stage 1": { "name": "Magcargo ex", "hp": 100 },
+            "Rulebox Stage 2": { "name": "Golem ex", "hp": 160 }
+        },
+        "Team Magma vs Team Aqua": {
+            "Basic": { "name": "Team Aqua's Kyogre", "hp": 100 },
+            "Stage 1": { "name": "Team Magma's Rhydon", "hp": 90 },
+            "Stage 2": { "name": "Team Aqua's Walrein", "hp": 120 },
+            "Rulebox Basic": { "name": "Entei ex", "hp": 100 },
+            "Rulebox Stage 2": { "name": "Blaziken ex", "hp": 150 }
+        },
+        "Hidden Legends": {
+            "Basic": { "name": "Tropius", "hp": 80 },
+            "Stage 1": { "name": "Milotic", "hp": 100 },
+            "Stage 2": { "name": "Exploud", "hp": 120 },
+            "Rulebox Basic": { "name": "Groudon ex", "hp": 100 },
+            "Rulebox Stage 1": { "name": "Wigglytuff ex", "hp": 100 },
+            "Rulebox Stage 2": { "name": "Metagross ex", "hp": 150 }
+        },
+        "FireRed & LeafGreen": {
+            "Basic": { "name": "Snorlax", "hp": 90 },
+            "Stage 1": { "name": "Arcanine", "hp": 90 },
+            "Stage 2": { "name": "Nidoking", "hp": 120 },
+            "Rulebox Basic": { "name": "Articuno ex", "hp": 110 },
+            "Rulebox Stage 1": { "name": "Gyarados ex", "hp": 130 },
+            "Rulebox Stage 2": { "name": "Charizard ex", "hp": 160 }
+        },
+        "Team Rocket Returns": {
+            "Basic": { "name": "Onix", "hp": 80 },
+            "Stage 1": { "name": "Dark Steelix", "hp": 110 },
+            "Stage 2": { "name": "Dark Ampharos", "hp": 120 },
+            "Rulebox Basic": { "name": "Rocket's Articuno ex", "hp": 100 },
+            "Rulebox Stage 1": { "name": "Rocket's Scizor ex", "hp": 120 }
+        },
+        "Deoxys": {
+            "Basic": { "name": "Rayquaza Star", "hp": 90 },
+            "Stage 1": { "name": "Camerupt", "hp": 90 },
+            "Stage 2": { "name": "Slaking", "hp": 120 },
+            "Rulebox Basic": { "name": "Deoxys ex", "hp": 110 },
+            "Rulebox Stage 1": { "name": "Hariyama ex", "hp": 110 },
+            "Rulebox Stage 2": { "name": "Salamence ex", "hp": 160 }
+        },
+        "Emerald": {
+            "Basic": { "name": "Groudon", "hp": 80 },
+            "Stage 1": { "name": "Milotic", "hp": 90 },
+            "Stage 2": { "name": "Exploud", "hp": 120 },
+            "Rulebox Basic": { "name": "Deoxys ex", "hp": 110 },
+            "Rulebox Stage 1": { "name": "Milotic ex", "hp": 130 }
+        },
+        "Unseen Forces": {
+            "Basic": { "name": "Chansey", "hp": 90 },
+            "Stage 1": { "name": "Octillery", "hp": 80 },
+            "Stage 2": { "name": "Ampharos", "hp": 120 },
+            "Rulebox Basic": { "name": "Ho-Oh ex", "hp": 110 },
+            "Rulebox Stage 1": { "name": "Blissey ex", "hp": 160 },
+            "Rulebox Stage 2": { "name": "Tyranitar ex", "hp": 160 }
+        },
+        "Delta Species": {
+            "Basic": { "name": "Rayquaza", "hp": 90 },
+            "Stage 1": { "name": "Marowak", "hp": 80 },
+            "Stage 2": { "name": "Tyranitar", "hp": 120 },
+            "Rulebox Stage 1": { "name": "Vaporeon ex", "hp": 120 }
+        },
+        "Legend Maker": {
+            "Basic": { "name": "Regice Star", "hp": 90 },
+            "Stage 1": { "name": "Wailord", "hp": 120 },
+            "Stage 2": { "name": "Golem", "hp": 120 },
+            "Rulebox Basic": { "name": "Mew ex", "hp": 90 },
+            "Rulebox Stage 1": { "name": "Arcanine ex", "hp": 120 },
+            "Rulebox Stage 2": { "name": "Armaldo ex", "hp": 160 }
+        },
+        "Holon Phantoms": {
+            "Basic": { "name": "Deoxys", "hp": 80 },
+            "Stage 1": { "name": "Gyarados", "hp": 90 },
+            "Stage 2": { "name": "Armaldo", "hp": 110 },
+            "Rulebox Basic": { "name": "Mew ex", "hp": 90 },
+            "Rulebox Stage 1": { "name": "Crawdaunt ex", "hp": 110 }
+        },
+        "Crystal Guardians": {
+            "Basic": { "name": "Alakazam Star", "hp": 80 },
+            "Stage 1": { "name": "Wigglytuff", "hp": 90 },
+            "Stage 2": { "name": "Charizard", "hp": 120 },
+            "Rulebox Basic": { "name": "Groudon ex", "hp": 100 },
+            "Rulebox Stage 1": { "name": "Delcatty ex", "hp": 90 },
+            "Rulebox Stage 2": { "name": "Aggron ex", "hp": 150 }
+        },
+        "Dragon Frontiers": {
+            "Basic": { "name": "Charizard Star", "hp": 90 },
+            "Stage 1": { "name": "Milotic", "hp": 90 },
+            "Stage 2": { "name": "Ampharos", "hp": 120 },
+            "Rulebox Basic": { "name": "Rayquaza ex", "hp": 110 },
+            "Rulebox Stage 1": { "name": "Altaria ex", "hp": 100 },
+            "Rulebox Stage 2": { "name": "Salamence ex", "hp": 160 }
+        },
+        "Power Keepers": {
+            "Basic": { "name": "Wobbuffet", "hp": 80 },
+            "Stage 1": { "name": "Altaria", "hp": 80 },
+            "Stage 2": { "name": "Armaldo", "hp": 120 },
+            "Rulebox Basic": { "name": "Absol ex", "hp": 100 },
+            "Rulebox Stage 1": { "name": "Claydol ex", "hp": 120 },
+            "Rulebox Stage 2": { "name": "Salamence ex", "hp": 160 }
+        },
+        "Diamond & Pearl": {
+            "Basic": { "name": "Snorlax", "hp": 100 },
+            "Stage 1": { "name": "Hippowdon", "hp": 110 },
+            "Stage 2": { "name": "Rhyperior", "hp": 140 },
+            "Stage 3": { "name": "Torterra LV.X", "hp": 160 }
+        },
+        "Mysterious Treasures": {
+            "Basic": { "name": "Chansey", "hp": 100 },
+            "Stage 1": { "name": "Blissey", "hp": 130 },
+            "Stage 2": { "name": "Tyranitar", "hp": 140 }
+        },
+        "Secret Wonders": {
+            "Basic": { "name": "Ho-Oh", "hp": 90 },
+            "Stage 1": { "name": "Lickilicky", "hp": 110 },
+            "Stage 2": { "name": "Salamence", "hp": 140 },
+            "Stage 3": { "name": "Gardevoir LV.X", "hp": 130 }
+        },
+        "Great Encounters": {
+            "Basic": { "name": "Dialga", "hp": 90 },
+            "Stage 1": { "name": "Wailord", "hp": 200 },
+            "Stage 2": { "name": "Blaziken", "hp": 130 }
+        },
+        "Majestic Dawn": {
+            "Basic": { "name": "Articuno", "hp": 100 },
+            "Stage 1": { "name": "Hippowdon", "hp": 100 },
+            "Stage 2": { "name": "Torterra", "hp": 140 },
+            "Stage 3": { "name": "Garchomp LV.X", "hp": 140 }
+        },
+        "Legends Awakened": {
+            "Basic": { "name": "Regigigas", "hp": 120 },
+            "Stage 1": { "name": "Mewtwo LV.X", "hp": 120 },
+            "Stage 2": { "name": "Dragonite", "hp": 140 },
+            "Stage 3": { "name": "Rhyperior LV.X", "hp": 170 }
+        },
+        "Stormfront": {
+            "Basic": { "name": "Regigigas", "hp": 100 },
+            "Stage 1": { "name": "Regigigas LV.X", "hp": 150 },
+            "Stage 2": { "name": "Torterra", "hp": 140 },
+            "Stage 3": { "name": "Machamp LV.X", "hp": 150 }
+        },
+        "Platinum": {
+            "Basic": { "name": "Giratina", "hp": 110 },
+            "Stage 1": { "name": "Giratina LV.X", "hp": 130 },
+            "Stage 2": { "name": "Slaking", "hp": 150 }
+        },
+        "Rising Rivals": {
+            "Basic": { "name": "Golem E4", "hp": 110 },
+            "Stage 1": { "name": "Snorlax LV.X", "hp": 130 },
+            "Stage 2": { "name": "Walrein", "hp": 140 },
+            "Stage 3": { "name": "Flygon LV.X", "hp": 140 }
+        },
+        "Supreme Victors": {
+            "Basic": { "name": "Rayquaza C", "hp": 100 },
+            "Stage 1": { "name": "Wailord", "hp": 180 },
+            "Stage 2": { "name": "Rhyperior", "hp": 140 },
+            "Stage 3": { "name": "Charizard G LV.X", "hp": 120 }
+        },
+        "Arceus": {
+            "Basic": { "name": "Heatran", "hp": 100 },
+            "Stage 1": { "name": "Arceus LV.X", "hp": 120 },
+            "Stage 2": { "name": "Charizard", "hp": 140 },
+            "Stage 3": { "name": "Salamence LV.X", "hp": 160 }
+        },
+        "HeartGold & SoulSilver": {
+            "Basic": { "name": "Wobbuffet", "hp": 90 },
+            "Stage 1": { "name": "Gyarados", "hp": 130 },
+            "Stage 2": { "name": "Meganium", "hp": 150 },
+            "Rulebox Basic": { "name": "Ho-Oh LEGEND", "hp": 140 }
+        },
+        "Unleashed": {
+            "Basic": { "name": "Sudowoodo", "hp": 90 },
+            "Stage 1": { "name": "Steelix", "hp": 140 },
+            "Stage 2": { "name": "Tyranitar", "hp": 160 },
+            "Rulebox Basic": { "name": "Raikou & Suicune LEGEND", "hp": 160 }
+        },
+        "Undaunted": {
+            "Basic": { "name": "Tropius", "hp": 90 },
+            "Stage 1": { "name": "Houndoom", "hp": 110 },
+            "Stage 2": { "name": "Metagross", "hp": 130 },
+            "Rulebox Basic": { "name": "Kyogre & Groudon LEGEND", "hp": 150 }
+        },
+        "Triumphant": {
+            "Basic": { "name": "Wailmer", "hp": 90 },
+            "Stage 1": { "name": "Wailord", "hp": 180 },
+            "Stage 2": { "name": "Machamp", "hp": 150 },
+            "Rulebox Basic": { "name": "Palkia & Dialga LEGEND", "hp": 160 }
+        },
+        "Call of Legends": {
+            "Basic": { "name": "Dialga", "hp": 100 },
+            "Stage 1": { "name": "Gyarados", "hp": 130 },
+            "Stage 2": { "name": "Feraligatr", "hp": 130 }
+        },
+        "Black & White": {
+            "Basic": { "name": "Reshiram", "hp": 130 },
+            "Stage 1": { "name": "Darmanitan", "hp": 120 },
+            "Stage 2": { "name": "Emboar", "hp": 150 }
+        },
+        "Emerging Powers": {
+            "Basic": { "name": "Terrakion", "hp": 120 },
+            "Stage 1": { "name": "Beartic", "hp": 130 },
+            "Stage 2": { "name": "Klinklang", "hp": 150 }
+        },
+        "Noble Victories": {
+            "Basic": { "name": "Kyurem", "hp": 130 },
+            "Stage 1": { "name": "Golurk", "hp": 130 },
+            "Stage 2": { "name": "Gigalith", "hp": 150 }
+        },
+        "Next Destinies": {
+            "Basic": { "name": "Reshiram", "hp": 130 },
+            "Stage 1": { "name": "Arcanine", "hp": 130 },
+            "Stage 2": { "name": "Emboar", "hp": 150 },
+            "Rulebox Basic": { "name": "Reshiram-EX", "hp": 180 }
+        },
+        "Dark Explorers": {
+            "Basic": { "name": "Chansey", "hp": 100 },
+            "Stage 1": { "name": "Blissey", "hp": 130 },
+            "Stage 2": { "name": "Krookodile", "hp": 150 },
+            "Rulebox Basic": { "name": "Entei-EX", "hp": 180 }
+        },
+        "Dragons Exalted": {
+            "Basic": { "name": "Rayquaza", "hp": 120 },
+            "Stage 1": { "name": "Wailord", "hp": 200 },
+            "Stage 2": { "name": "Hydreigon", "hp": 150 },
+            "Rulebox Basic": { "name": "Terrakion-EX", "hp": 180 }
+        },
+        "Dragon Vault": {
+            "Basic": { "name": "Kyurem", "hp": 130 },
+            "Stage 1": { "name": "Shelgon", "hp": 80 },
+            "Stage 2": { "name": "Dragonite", "hp": 150 }
+        },
+        "Boundaries Crossed": {
+            "Basic": { "name": "Black Kyurem", "hp": 130 },
+            "Stage 1": { "name": "Tangrowth", "hp": 130 },
+            "Stage 2": { "name": "Charizard", "hp": 160 },
+            "Rulebox Basic": { "name": "Landorus-EX", "hp": 180 }
+        },
+        "Plasma Storm": {
+            "Basic": { "name": "Giratina", "hp": 130 },
+            "Stage 1": { "name": "Beartic", "hp": 130 },
+            "Stage 2": { "name": "Charizard", "hp": 160 },
+            "Rulebox Basic": { "name": "Cobalion-EX", "hp": 180 }
+        },
+        "Plasma Freeze": {
+            "Basic": { "name": "Reshiram", "hp": 130 },
+            "Stage 1": { "name": "Steelix", "hp": 150 },
+            "Stage 2": { "name": "Hydreigon", "hp": 150 },
+            "Rulebox Basic": { "name": "Heatran-EX", "hp": 180 }
+        },
+        "Plasma Blast": {
+            "Basic": { "name": "Virizion", "hp": 110 },
+            "Stage 1": { "name": "Golurk", "hp": 130 },
+            "Stage 2": { "name": "Machamp", "hp": 150 },
+            "Rulebox Basic": { "name": "Kyurem-EX", "hp": 180 }
+        },
+        "Legendary Treasures": {
+            "Basic": { "name": "Reshiram", "hp": 130 },
+            "Stage 1": { "name": "Gyarados", "hp": 130 },
+            "Stage 2": { "name": "Charizard", "hp": 160 },
+            "Rulebox Basic": { "name": "Reshiram-EX", "hp": 180 }
+        },
+        "Kalos Starter Set": {
+            "Basic": { "name": "Snorlax", "hp": 120 },
+            "Stage 1": { "name": "Granbull", "hp": 100 },
+            "Stage 2": { "name": "Chesnaught", "hp": 150 }
+        },
+        "XY": {
+            "Basic": { "name": "Yveltal", "hp": 130 },
+            "Stage 1": { "name": "Gogoat", "hp": 110 },
+            "Stage 2": { "name": "Chesnaught", "hp": 160 },
+            "Rulebox Basic": { "name": "Venusaur-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Venusaur-EX", "hp": 230 }
+        },
+        "Flashfire": {
+            "Basic": { "name": "Snorlax", "hp": 130 },
+            "Stage 1": { "name": "Avalugg", "hp": 130 },
+            "Stage 2": { "name": "Walrein", "hp": 150 },
+            "Rulebox Basic": { "name": "Charizard-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Charizard-EX", "hp": 230 }
+        },
+        "Furious Fists": {
+            "Basic": { "name": "Thundurus", "hp": 120 },
+            "Stage 1": { "name": "Beartic", "hp": 130 },
+            "Stage 2": { "name": "Machamp", "hp": 150 },
+            "Rulebox Basic": { "name": "Seismitoad-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Heracross-EX", "hp": 220 }
+        },
+        "Phantom Forces": {
+            "Basic": { "name": "Heatran", "hp": 130 },
+            "Stage 1": { "name": "Blissey", "hp": 130 },
+            "Stage 2": { "name": "Feraligatr", "hp": 150 },
+            "Rulebox Basic": { "name": "Dialga-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Gengar-EX", "hp": 220 }
+        },
+        "Primal Clash": {
+            "Basic": { "name": "Kyogre", "hp": 130 },
+            "Stage 1": { "name": "Tangrowth", "hp": 130 },
+            "Stage 2": { "name": "Rhyperior", "hp": 160 },
+            "Rulebox Basic": { "name": "Wailord-EX", "hp": 250 },
+            "Rulebox Stage 1": { "name": "Primal Kyogre-EX", "hp": 240 }
+        },
+        "Double Crisis": {
+            "Basic": { "name": "Team Aqua's Seviper", "hp": 90 },
+            "Stage 1": { "name": "Team Magma's Camerupt", "hp": 110 },
+            "Stage 2": { "name": "Team Aqua's Walrein", "hp": 140 },
+            "Rulebox Basic": { "name": "Team Aqua's Kyogre-EX", "hp": 190 }
+        },
+        "Roaring Skies": {
+            "Basic": { "name": "Reshiram", "hp": 130 },
+            "Stage 1": { "name": "Exeggutor", "hp": 120 },
+            "Stage 2": { "name": "Dragonite", "hp": 160 },
+            "Rulebox Basic": { "name": "Rayquaza-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Rayquaza-EX", "hp": 230 }
+        },
+        "Ancient Origins": {
+            "Basic": { "name": "Entei", "hp": 130 },
+            "Stage 1": { "name": "Gyarados", "hp": 130 },
+            "Stage 2": { "name": "Metagross", "hp": 150 },
+            "Rulebox Basic": { "name": "Kyurem-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Tyranitar-EX", "hp": 240 }
+        },
+        "BREAKthrough": {
+            "Basic": { "name": "Yveltal", "hp": 130 },
+            "Stage 1": { "name": "Abomasnow", "hp": 130 },
+            "Stage 2": { "name": "Chesnaught", "hp": 160 },
+            "Stage 3": { "name": "Chesnaught BREAK", "hp": 190 },
+            "Rulebox Basic": { "name": "Houndoom-EX", "hp": 170 },
+            "Rulebox Stage 1": { "name": "M Mewtwo-EX", "hp": 230 }
+        },
+        "BREAKpoint": {
+            "Basic": { "name": "Lapras", "hp": 120 },
+            "Stage 1": { "name": "Camerupt", "hp": 130 },
+            "Stage 2": { "name": "Trevenant BREAK", "hp": 160 },
+            "Stage 3": { "name": "Greninja BREAK", "hp": 170 },
+            "Rulebox Basic": { "name": "Emboar-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Gyarados-EX", "hp": 240 }
+        },
+        "Generations": {
+            "Basic": { "name": "Snorlax", "hp": 130 },
+            "Stage 1": { "name": "Gyarados", "hp": 130 },
+            "Stage 2": { "name": "Charizard", "hp": 160 },
+            "Rulebox Basic": { "name": "Venusaur-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Venusaur-EX", "hp": 230 }
+        },
+        "Fates Collide": {
+            "Basic": { "name": "Snorlax", "hp": 140 },
+            "Stage 1": { "name": "Lugia BREAK", "hp": 150 },
+            "Stage 2": { "name": "Tyranitar", "hp": 160 },
+            "Stage 3": { "name": "Delphox BREAK", "hp": 180 },
+            "Rulebox Basic": { "name": "Zygarde-EX", "hp": 190 },
+            "Rulebox Stage 1": { "name": "M Altaria-EX", "hp": 220 }
+        },
+        "Steam Siege": {
+            "Basic": { "name": "Volcanion", "hp": 130 },
+            "Stage 1": { "name": "Yveltal BREAK", "hp": 150 },
+            "Stage 2": { "name": "Pyroar BREAK", "hp": 160 },
+            "Stage 3": { "name": "Hydreigon BREAK", "hp": 190 },
+            "Rulebox Basic": { "name": "Volcanion-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Steelix-EX", "hp": 240 }
+        },
+        "Evolutions": {
+            "Basic": { "name": "Mewtwo", "hp": 130 },
+            "Stage 1": { "name": "Arcanine", "hp": 130 },
+            "Stage 2": { "name": "Machamp", "hp": 160 },
+            "Stage 3": { "name": "Machamp BREAK", "hp": 190 },
+            "Rulebox Basic": { "name": "Venusaur-EX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "M Venusaur-EX", "hp": 230 }
+        },
+        "Sun & Moon": {
+            "Basic": { "name": "Kangaskhan", "hp": 130 },
+            "Stage 1": { "name": "Crabominable", "hp": 140 },
+            "Stage 2": { "name": "Incineroar", "hp": 160 },
+            "Rulebox Basic": { "name": "Lapras-GX", "hp": 190 },
+            "Rulebox Stage 1": { "name": "Lurantis-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Incineroar-GX", "hp": 250 }
+        },
+        "Guardians Rising": {
+            "Basic": { "name": "Wailmer", "hp": 120 },
+            "Stage 1": { "name": "Wailord", "hp": 200 },
+            "Stage 2": { "name": "Alolan Golem", "hp": 160 },
+            "Rulebox Basic": { "name": "Wishiwashi-GX", "hp": 210 },
+            "Rulebox Stage 1": { "name": "Alolan Ninetales-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Metagross-GX", "hp": 250 }
+        },
+        "Burning Shadows": {
+            "Basic": { "name": "Zygarde", "hp": 150 },
+            "Stage 1": { "name": "Gyarados", "hp": 150 },
+            "Stage 2": { "name": "Scolipede", "hp": 160 },
+            "Rulebox Basic": { "name": "Ho-Oh-GX", "hp": 190 },
+            "Rulebox Stage 1": { "name": "Alolan Muk-GX", "hp": 220 },
+            "Rulebox Stage 2": { "name": "Charizard-GX", "hp": 250 }
+        },
+        "Shining Legends": {
+            "Basic": { "name": "Shining Genesect", "hp": 130 },
+            "Stage 1": { "name": "Golurk", "hp": 140 },
+            "Stage 2": { "name": "Incineroar", "hp": 170 },
+            "Rulebox Basic": { "name": "Mewtwo-GX", "hp": 190 },
+            "Rulebox Stage 1": { "name": "Raichu-GX", "hp": 210 }
+        },
+        "Crimson Invasion": {
+            "Basic": { "name": "Regigigas", "hp": 180 },
+            "Stage 1": { "name": "Camerupt", "hp": 140 },
+            "Stage 2": { "name": "Mamoswine", "hp": 180 },
+            "Rulebox Basic": { "name": "Guzzlord-GX", "hp": 210 },
+            "Rulebox Stage 1": { "name": "Gyarados-GX", "hp": 240 },
+            "Rulebox Stage 2": { "name": "Alolan Golem-GX", "hp": 250 }
+        },
+        "Ultra Prism": {
+            "Basic": { "name": "Giratina Prism Star", "hp": 160 },
+            "Stage 1": { "name": "Electivire", "hp": 140 },
+            "Stage 2": { "name": "Torterra", "hp": 180 },
+            "Rulebox Basic": { "name": "Celesteela-GX", "hp": 200 },
+            "Rulebox Stage 1": { "name": "Silvally-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Lunala-GX", "hp": 250 }
+        },
+        "Forbidden Light": {
+            "Basic": { "name": "Volcanion Prism Star", "hp": 160 },
+            "Stage 1": { "name": "Alolan Exeggutor", "hp": 160 },
+            "Stage 2": { "name": "Torterra", "hp": 180 },
+            "Rulebox Basic": { "name": "Zygarde-GX", "hp": 200 },
+            "Rulebox Stage 1": { "name": "Naganadel-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Greninja-GX", "hp": 230 }
+        },
+        "Celestial Storm": {
+            "Basic": { "name": "Celesteela", "hp": 140 },
+            "Stage 1": { "name": "Wailord", "hp": 220 },
+            "Stage 2": { "name": "Tyranitar", "hp": 170 },
+            "Rulebox Basic": { "name": "Stakataka-GX", "hp": 180 },
+            "Rulebox Stage 1": { "name": "Palossand-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Shiftry-GX", "hp": 240 }
+        },
+        "Dragon Majesty": {
+            "Basic": { "name": "Zekrom", "hp": 130 },
+            "Stage 1": { "name": "Gyarados", "hp": 160 },
+            "Stage 2": { "name": "Charizard", "hp": 160 },
+            "Rulebox Basic": { "name": "White Kyurem-GX", "hp": 190 },
+            "Rulebox Stage 1": { "name": "Altaria-GX", "hp": 200 },
+            "Rulebox Stage 2": { "name": "Dragonite-GX", "hp": 250 }
+        },
+        "Lost Thunder": {
+            "Basic": { "name": "Xerneas Prism Star", "hp": 160 },
+            "Stage 1": { "name": "Steelix", "hp": 180 },
+            "Stage 2": { "name": "Typhlosion", "hp": 160 },
+            "Rulebox Basic": { "name": "Zeraora-GX", "hp": 190 },
+            "Rulebox Stage 1": { "name": "Magcargo-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Tyranitar-GX", "hp": 250 }
+        },
+        "Team Up": {
+            "Basic": { "name": "Lapras", "hp": 130 },
+            "Stage 1": { "name": "Alolan Exeggutor", "hp": 160 },
+            "Stage 2": { "name": "Alolan Golem", "hp": 180 },
+            "Rulebox Basic": { "name": "Magikarp & Wailord-GX", "hp": 300 },
+            "Rulebox Stage 1": { "name": "Lycanroc-GX", "hp": 200 },
+            "Rulebox Stage 2": { "name": "Incineroar-GX", "hp": 250 }
+        },
+        "Detective Pikachu": {
+            "Basic": { "name": "Mewtwo", "hp": 130 },
+            "Stage 1": { "name": "Arcanine", "hp": 120 },
+            "Stage 2": { "name": "Charizard", "hp": 180 }
+        },
+        "Unbroken Bonds": {
+            "Basic": { "name": "Snorlax", "hp": 150 },
+            "Stage 1": { "name": "Melmetal", "hp": 150 },
+            "Stage 2": { "name": "Golem", "hp": 180 },
+            "Rulebox Basic": { "name": "Reshiram & Charizard-GX", "hp": 270 },
+            "Rulebox Stage 1": { "name": "Honchkrow-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Blastoise-GX", "hp": 240 }
+        },
+        "Unified Minds": {
+            "Basic": { "name": "Terrakion", "hp": 140 },
+            "Stage 1": { "name": "Steelix", "hp": 170 },
+            "Stage 2": { "name": "Slaking", "hp": 180 },
+            "Rulebox Basic": { "name": "Mega Sableye & Tyranitar-GX", "hp": 280 },
+            "Rulebox Stage 1": { "name": "Aerodactyl-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Dragonite-GX", "hp": 250 }
+        },
+        "Hidden Fates": {
+            "Basic": { "name": "Snorlax", "hp": 150 },
+            "Stage 1": { "name": "Vaporeon", "hp": 120 },
+            "Stage 2": { "name": "Golem", "hp": 170 },
+            "Rulebox Basic": { "name": "Moltres & Zapdos & Articuno-GX", "hp": 300 },
+            "Rulebox Stage 1": { "name": "Gyarados-GX", "hp": 230 },
+            "Rulebox Stage 2": { "name": "Charizard-GX", "hp": 250 }
+        },
+        "Cosmic Eclipse": {
+            "Basic": { "name": "Wishiwashi", "hp": 180 },
+            "Stage 1": { "name": "Wailord", "hp": 200 },
+            "Stage 2": { "name": "Emboar", "hp": 170 },
+            "Rulebox Basic": { "name": "Arceus & Dialga & Palkia-GX", "hp": 280 },
+            "Rulebox Stage 1": { "name": "Volcarona-GX", "hp": 210 },
+            "Rulebox Stage 2": { "name": "Vileplume-GX", "hp": 240 }
+        },
+        "Sword & Shield": {
+            "Basic": { "name": "Snorlax", "hp": 150 },
+            "Stage 1": { "name": "Copperajah", "hp": 190 },
+            "Stage 2": { "name": "Rillaboom", "hp": 190 },
+            "Rulebox Basic": { "name": "Zamazenta V", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Snorlax VMAX", "hp": 340 }
+        },
+        "Rebel Clash": {
+            "Basic": { "name": "Snorlax", "hp": 150 },
+            "Stage 1": { "name": "Gyarados", "hp": 180 },
+            "Stage 2": { "name": "Seismitoad", "hp": 170 },
+            "Rulebox Basic": { "name": "Rillaboom V", "hp": 220 },
+            "Rulebox Stage 1": { "name": "Copperajah VMAX", "hp": 340 }
+        },
+        "Darkness Ablaze": {
+            "Basic": { "name": "Heatran", "hp": 130 },
+            "Stage 1": { "name": "Copperajah", "hp": 190 },
+            "Stage 2": { "name": "Tyranitar", "hp": 180 },
+            "Rulebox Basic": { "name": "Rhyperior V", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Eternatus VMAX", "hp": 340 }
+        },
+        "Champion's Path": {
+            "Basic": { "name": "Zygarde", "hp": 140 },
+            "Stage 1": { "name": "Centiskorch", "hp": 130 },
+            "Stage 2": { "name": "Machamp", "hp": 170 },
+            "Rulebox Basic": { "name": "Wailord V", "hp": 280 },
+            "Rulebox Stage 1": { "name": "Charizard VMAX", "hp": 330 }
+        },
+        "Vivid Voltage": {
+            "Basic": { "name": "Zygarde", "hp": 150 },
+            "Stage 1": { "name": "Wailord", "hp": 200 },
+            "Stage 2": { "name": "Charizard", "hp": 170 },
+            "Rulebox Basic": { "name": "Steelix V", "hp": 250 },
+            "Rulebox Stage 1": { "name": "Coalossal VMAX", "hp": 330 }
+        },
+        "Shining Fates": {
+            "Basic": { "name": "Stonjourner", "hp": 140 },
+            "Stage 1": { "name": "Copperajah", "hp": 190 },
+            "Stage 2": { "name": "Rillaboom", "hp": 170 },
+            "Rulebox Basic": { "name": "Dhelmise V", "hp": 220 },
+            "Rulebox Stage 1": { "name": "Eternatus VMAX", "hp": 340 }
+        },
+        "Battle Styles": {
+            "Basic": { "name": "Tapu Bulu", "hp": 130 },
+            "Stage 1": { "name": "Steelix", "hp": 190 },
+            "Stage 2": { "name": "Emboar", "hp": 180 },
+            "Rulebox Basic": { "name": "Tyranitar V", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Single Strike Urshifu VMAX", "hp": 330 }
+        },
+        "Chilling Reign": {
+            "Basic": { "name": "Zarude", "hp": 130 },
+            "Stage 1": { "name": "Golurk", "hp": 150 },
+            "Stage 2": { "name": "Rillaboom", "hp": 180 },
+            "Rulebox Basic": { "name": "Blissey V", "hp": 250 },
+            "Rulebox Stage 1": { "name": "Metagross VMAX", "hp": 330 }
+        },
+        "Evolving Skies": {
+            "Basic": { "name": "Dialga", "hp": 130 },
+            "Stage 1": { "name": "Avalugg", "hp": 150 },
+            "Stage 2": { "name": "Gigalith", "hp": 180 },
+            "Rulebox Basic": { "name": "Dragonite V", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Gyarados VMAX", "hp": 330 }
+        },
+        "Celebrations": {
+            "Baby": { "name": "Cleffa", "hp": 30 },
+            "Basic": { "name": "Ho-Oh", "hp": 130 },
+            "Stage 1": { "name": "Donphan", "hp": 120 },
+            "Stage 2": { "name": "Solgaleo", "hp": 170 },
+            "Stage 3": { "name": "Luxray GL LV.X", "hp": 110 },
+            "Rulebox Basic": { "name": "Zacian V", "hp": 220 },
+            "Rulebox Stage 1": { "name": "Flying Pikachu VMAX", "hp": 310 },
+            "Rulebox Stage 2": { "name": "Gardevoir ex", "hp": 150 }
+        },
+        "Fusion Strike": {
+            "Basic": { "name": "Snorlax", "hp": 160 },
+            "Stage 1": { "name": "Steelix", "hp": 190 },
+            "Stage 2": { "name": "Golem", "hp": 180 },
+            "Rulebox Basic": { "name": "Tyranitar V", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Rillaboom VMAX", "hp": 330 }
+        },
+        "Brilliant Stars": {
+            "Basic": { "name": "Heatran", "hp": 140 },
+            "Stage 1": { "name": "Golurk", "hp": 150 },
+            "Stage 2": { "name": "Torterra", "hp": 190 },
+            "Rulebox Basic": { "name": "Entei V", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Kingler VMAX", "hp": 330 }
+        },
+        "Astral Radiance": {
+            "Basic": { "name": "Radiant Heatran", "hp": 160 },
+            "Stage 1": { "name": "Hisuian Arcanine", "hp": 150 },
+            "Stage 2": { "name": "Mamoswine", "hp": 180 },
+            "Rulebox Basic": { "name": "Zamazenta V", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Heatran VMAX", "hp": 330 }
+        },
+        "Pokémon GO": {
+            "Basic": { "name": "Radiant Charizard", "hp": 160 },
+            "Stage 1": { "name": "Blissey", "hp": 200 },
+            "Stage 2": { "name": "Venusaur", "hp": 180 },
+            "Rulebox Basic": { "name": "Alolan Exeggutor V", "hp": 240 },
+            "Rulebox Stage 1": { "name": "Melmetal VMAX", "hp": 330 }
+        },
+        "Lost Origin": {
+            "Basic": { "name": "Radiant Steelix", "hp": 170 },
+            "Stage 1": { "name": "Abomasnow", "hp": 140 },
+            "Stage 2": { "name": "Rhyperior", "hp": 190 },
+            "Rulebox Basic": { "name": "Kyurem V", "hp": 220 },
+            "Rulebox Stage 1": { "name": "Eternatus VMAX", "hp": 340 }
+        },
+        "Silver Tempest": {
+            "Basic": { "name": "Radiant Tsareena", "hp": 140 },
+            "Stage 1": { "name": "Wailord", "hp": 200 },
+            "Stage 2": { "name": "Incineroar", "hp": 170 },
+            "Rulebox Basic": { "name": "Blissey V", "hp": 250 },
+            "Rulebox Stage 1": { "name": "Duraludon VMAX", "hp": 330 }
+        },
+        "Crown Zenith": {
+            "Basic": { "name": "Radiant Eternatus", "hp": 170 },
+            "Stage 1": { "name": "Wailord", "hp": 220 },
+            "Stage 2": { "name": "Aggron", "hp": 180 },
+            "Rulebox Basic": { "name": "Regigigas V", "hp": 240 },
+            "Rulebox Stage 1": { "name": "Duraludon VMAX", "hp": 330 }
+        },
+        "Scarlet & Violet": {
+            "Basic": { "name": "Dondozo", "hp": 160 },
+            "Stage 1": { "name": "Cetitan", "hp": 180 },
+            "Stage 2": { "name": "Skeledirge", "hp": 180 },
+            "Rulebox Basic": { "name": "Great Tusk ex", "hp": 250 },
+            "Rulebox Stage 1": { "name": "Gyarados ex", "hp": 300 },
+            "Rulebox Stage 2": { "name": "Magnezone ex", "hp": 330 }
+        },
+        "Paldea Evolved": {
+            "Basic": { "name": "Heracross", "hp": 130 },
+            "Stage 1": { "name": "Gyarados", "hp": 180 },
+            "Stage 2": { "name": "Garganacl", "hp": 180 },
+            "Rulebox Basic": { "name": "Ting-Lu ex", "hp": 240 },
+            "Rulebox Stage 1": { "name": "Copperajah ex", "hp": 300 },
+            "Rulebox Stage 2": { "name": "Skeledirge ex", "hp": 340 }
+        },
+        "Obsidian Flames": {
+            "Basic": { "name": "Entei", "hp": 130 },
+            "Stage 1": { "name": "Crabominable", "hp": 160 },
+            "Stage 2": { "name": "Kingambit", "hp": 180 },
+            "Rulebox Basic": { "name": "Koraidon ex", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Melmetal ex", "hp": 300 },
+            "Rulebox Stage 2": { "name": "Tyranitar ex", "hp": 340 }
+        },
+        "151": {
+            "Basic": { "name": "Snorlax", "hp": 150 },
+            "Stage 1": { "name": "Gyarados", "hp": 190 },
+            "Stage 2": { "name": "Machamp", "hp": 180 },
+            "Rulebox Basic": { "name": "Kangaskhan ex", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Arbok ex", "hp": 270 },
+            "Rulebox Stage 2": { "name": "Venusaur ex", "hp": 340 }
+        },
+        "Paradox Rift": {
+            "Basic": { "name": "Dondozo", "hp": 160 },
+            "Stage 1": { "name": "Steelix", "hp": 180 },
+            "Stage 2": { "name": "Garganacl", "hp": 160 },
+            "Rulebox Basic": { "name": "Mewtwo ex", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Golisopod ex", "hp": 270 },
+            "Rulebox Stage 2": { "name": "Aegislash ex", "hp": 330 }
+        },
+        "Paldean Fates": {
+            "Basic": { "name": "Dondozo", "hp": 160 },
+            "Stage 1": { "name": "Donphan", "hp": 150 },
+            "Stage 2": { "name": "Garganacl", "hp": 180 },
+            "Rulebox Basic": { "name": "Great Tusk ex", "hp": 250 },
+            "Rulebox Stage 1": { "name": "Paldean Clodsire ex", "hp": 280 },
+            "Rulebox Stage 2": { "name": "Charizard ex", "hp": 330 }
+        },
+        "Temporal Forces": {
+            "Basic": { "name": "Iron Hands", "hp": 140 },
+            "Stage 1": { "name": "Golurk", "hp": 160 },
+            "Stage 2": { "name": "Feraligatr", "hp": 180 },
+            "Rulebox Basic": { "name": "Iron Boulder ex", "hp": 240 },
+            "Rulebox Stage 1": { "name": "Scizor ex", "hp": 270 },
+            "Rulebox Stage 2": { "name": "Torterra ex", "hp": 340 }
+        },
+        "Twilight Masquerade": {
+            "Basic": { "name": "Snorlax", "hp": 160 },
+            "Stage 1": { "name": "Tangrowth", "hp": 150 },
+            "Stage 2": { "name": "Rillaboom", "hp": 180 },
+            "Rulebox Basic": { "name": "Bloodmoon Ursaluna ex", "hp": 260 },
+            "Rulebox Stage 1": { "name": "Palafin ex", "hp": 340 },
+            "Rulebox Stage 2": { "name": "Dragapult ex", "hp": 320 }
+        },
+        "Shrouded Fable": {
+            "Basic": { "name": "Bloodmoon Ursaluna", "hp": 150 },
+            "Stage 1": { "name": "Copperajah", "hp": 200 },
+            "Stage 2": { "name": "Haxorus", "hp": 170 },
+            "Rulebox Basic": { "name": "Okidogi ex", "hp": 250 },
+            "Rulebox Stage 1": { "name": "Revavroom ex", "hp": 280 },
+            "Rulebox Stage 2": { "name": "Kingdra ex", "hp": 310 }
+        },
+        "Stellar Crown": {
+            "Basic": { "name": "Iron Boulder", "hp": 140 },
+            "Stage 1": { "name": "Archaludon", "hp": 180 },
+            "Stage 2": { "name": "Rhyperior", "hp": 200 },
+            "Rulebox Basic": { "name": "Terapagos ex", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Melmetal ex", "hp": 280 },
+            "Rulebox Stage 2": { "name": "Venusaur ex", "hp": 340 }
+        },
+        "Surging Sparks": {
+            "Basic": { "name": "Eternatus", "hp": 150 },
+            "Stage 1": { "name": "Cetitan", "hp": 180 },
+            "Stage 2": { "name": "Skeledirge", "hp": 180 },
+            "Rulebox Basic": { "name": "Black Kyurem ex", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Archaludon ex", "hp": 300 },
+            "Rulebox Stage 2": { "name": "Slaking ex", "hp": 340 }
+        },
+        "Prismatic Evolutions": {
+            "Basic": { "name": "Regigigas", "hp": 160 },
+            "Stage 1": { "name": "Archaludon", "hp": 180 },
+            "Stage 2": { "name": "Dusknoir", "hp": 160 },
+            "Rulebox Basic": { "name": "Snorlax ex", "hp": 260 },
+            "Rulebox Stage 1": { "name": "Palafin ex", "hp": 340 },
+            "Rulebox Stage 2": { "name": "Tyranitar ex", "hp": 340 }
+        },
+        "Journey Together": {
+            "Basic": { "name": "Hop's Snorlax", "hp": 150 },
+            "Stage 1": { "name": "Wailord", "hp": 240 },
+            "Stage 2": { "name": "Tyranitar", "hp": 190 },
+            "Rulebox Basic": { "name": "Hop's Zacian ex", "hp": 230 },
+            "Rulebox Stage 1": { "name": "Iono's Bellibolt ex", "hp": 280 },
+            "Rulebox Stage 2": { "name": "Mamoswine ex", "hp": 340 }
+        },
+        "Destined Rivals": {
+            "Basic": { "name": "Zamazenta", "hp": 130 },
+            "Stage 1": { "name": "Misty’s Gyarados", "hp": 180 },
+            "Stage 2": { "name": "Team Rocket’s Tyranitar", "hp": 180 },
+            "Rulebox Basic": { "name": "Team Rocket’s Mewtwo ex", "hp": 280 },
+            "Rulebox Stage 1": { "name": "Cetitan ex", "hp": 300 },
+            "Rulebox Stage 2": { "name": "Steven’s Metagross ex", "hp": 340 }
+        }
+    };
+
+    function hpData(stage) {
+        return sets.map((set, i) => {
+            if (data[set][stage]) {
+                return data[set][stage].hp;
+            } else {
+                return null;
+            }
+        });
+    }
+
+    const ctx = document.getElementById("myChart");
+
+    new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: sets,
+            datasets: [
+                {
+                    label: "Baby",
+                    data: hpData("Baby"),
+                    borderWidth: 1
+                },
+                {
+                    label: "Basic",
+                    data: hpData("Basic"),
+                    borderWidth: 1
+                },
+                {
+                    label: "Stage 1",
+                    data: hpData("Stage 1"),
+                    borderWidth: 1
+                },
+                {
+                    label: "Stage 2",
+                    data: hpData("Stage 2"),
+                    borderWidth: 1
+                },
+                {
+                    label: "Stage 3",
+                    data: hpData("Stage 3"),
+                    borderWidth: 1
+                },
+                {
+                    label: "Rulebox Basic",
+                    data: hpData("Rulebox Basic"),
+                    borderWidth: 1
+                },
+                {
+                    label: "Rulebox Stage 1",
+                    data: hpData("Rulebox Stage 1"),
+                    borderWidth: 1
+                },
+                {
+                    label: "Rulebox Stage 2",
+                    data: hpData("Rulebox Stage 2"),
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
