@@ -20,7 +20,7 @@ sets.forEach(set => {
 });
 
 cards.forEach(card => {
-  if (records.hasOwnProperty(card.set)) {
+  if (!card.name.includes("Unown") && records.hasOwnProperty(card.set)) {
     if (
       card.name.endsWith(" ex") ||
       card.name.endsWith("LEGEND") ||
