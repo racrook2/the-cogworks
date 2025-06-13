@@ -53,7 +53,7 @@
     "Stage 2": { "hp": "85.00" }
   },
   "Neo Destiny": {
-    "Basic": { "hp": "51.57" },
+    "Basic": { "hp": "51.35" },
     "Stage 1": { "hp": "69.19" },
     "Stage 2": { "hp": "81.11" }
   },
@@ -223,7 +223,7 @@
     "Stage 3": { "hp": "135.00" }
   },
   "Legends Awakened": {
-    "Basic": { "hp": "65.79" },
+    "Basic": { "hp": "65.71" },
     "Stage 1": { "hp": "85.12" },
     "Stage 2": { "hp": "123.85" },
     "Stage 3": { "hp": "155.00" }
@@ -241,15 +241,14 @@
   },
   "Rising Rivals": {
     "Basic": { "hp": "75.94" },
-    "Stage 1": { "hp": "88.00" },
-    "Stage 2": { "hp": "121.00" },
-    "Stage 3": { "hp": "112.00" }
+    "Stage 1": { "hp": "91.54" },
+    "Stage 2": { "hp": "126.25" },
+    "Stage 3": { "hp": "140.00" }
   },
   "Supreme Victors": {
     "Basic": { "hp": "67.58" },
-    "Stage 1": { "hp": "89.44" },
-    "Stage 2": { "hp": "131.43" },
-    "Stage 3": { "hp": "110.00" }
+    "Stage 1": { "hp": "92.20" },
+    "Stage 2": { "hp": "133.33" }
   },
   "Arceus": {
     "Basic": { "hp": "62.04" },
@@ -651,9 +650,8 @@
   "Celebrations": {
     "Baby": { "hp": "30.00" },
     "Basic": { "hp": "100.00" },
-    "Stage 1": { "hp": "90.00" },
+    "Stage 1": { "hp": "96.67" },
     "Stage 2": { "hp": "130.00" },
-    "Stage 3": { "hp": "110.00" },
     "Multi-Prize Basic": { "hp": "178.75" },
     "Multi-Prize Stage 1": { "hp": "280.00" },
     "Multi-Prize Stage 2": { "hp": "150.00" }

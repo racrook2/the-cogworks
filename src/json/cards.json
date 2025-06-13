@@ -28920,14 +28920,14 @@
     "name": "Alakazam E4 LV.X",
     "hp": "100",
     "color": "Psychic",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Rising Rivals"
   },
   {
     "name": "Floatzel GL LV.X",
     "hp": "100",
     "color": "Water",
-    "stage": "Stage 2",
+    "stage": "Stage 1",
     "set": "Rising Rivals"
   },
   {
@@ -28941,7 +28941,7 @@
     "name": "Gallade E4 LV.X",
     "hp": "100",
     "color": "Psychic",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Rising Rivals"
   },
   {
@@ -28955,21 +28955,21 @@
     "name": "Infernape E4 LV.X",
     "hp": "110",
     "color": "Fire",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Rising Rivals"
   },
   {
     "name": "Luxray GL LV.X",
     "hp": "110",
     "color": "Lightning",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Rising Rivals"
   },
   {
     "name": "Mismagius GL LV.X",
     "hp": "100",
     "color": "Psychic",
-    "stage": "Stage 2",
+    "stage": "Stage 1",
     "set": "Rising Rivals"
   },
   {
@@ -29984,28 +29984,28 @@
     "name": "Blaziken FB LV.X",
     "hp": "110",
     "color": "Fire",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Supreme Victors"
   },
   {
     "name": "Charizard G LV.X",
     "hp": "120",
     "color": "Fire",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Supreme Victors"
   },
   {
     "name": "Electivire FB LV.X",
     "hp": "120",
     "color": "Lightning",
-    "stage": "Stage 2",
+    "stage": "Stage 1",
     "set": "Supreme Victors"
   },
   {
     "name": "Garchomp C LV.X",
     "hp": "110",
     "color": "Colorless",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Supreme Victors"
   },
   {
@@ -30019,7 +30019,7 @@
     "name": "Staraptor FB LV.X",
     "hp": "100",
     "color": "Colorless",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Supreme Victors"
   },
   {
@@ -30068,14 +30068,14 @@
     "name": "Charizard G LV.X",
     "hp": "120",
     "color": "Fire",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Diamond & Pearl Promos"
   },
   {
     "name": "Garchomp C LV.X",
     "hp": "110",
     "color": "Colorless",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Diamond & Pearl Promos"
   },
   {
@@ -84521,14 +84521,14 @@
     "name": "Luxray GL LV.X",
     "hp": "110",
     "color": "Lightning",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Celebrations"
   },
   {
     "name": "Garchomp C LV.X",
     "hp": "110",
     "color": "Colorless",
-    "stage": "Stage 3",
+    "stage": "Stage 1",
     "set": "Celebrations"
   },
   {

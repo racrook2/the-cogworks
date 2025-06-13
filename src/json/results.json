@@ -248,8 +248,7 @@
   "Supreme Victors": {
     "Basic": { "name": "Rayquaza C", "hp": 100 },
     "Stage 1": { "name": "Wailord", "hp": 180 },
-    "Stage 2": { "name": "Rhyperior", "hp": 140 },
-    "Stage 3": { "name": "Charizard G LV.X", "hp": 120 }
+    "Stage 2": { "name": "Rhyperior", "hp": 140 }
   },
   "Arceus": {
     "Basic": { "name": "Heatran", "hp": 100 },
@@ -653,7 +652,6 @@
     "Basic": { "name": "Ho-Oh", "hp": 130 },
     "Stage 1": { "name": "Donphan", "hp": 120 },
     "Stage 2": { "name": "Solgaleo", "hp": 170 },
-    "Stage 3": { "name": "Luxray GL LV.X", "hp": 110 },
     "Multi-Prize Basic": { "name": "Zacian V", "hp": 220 },
     "Multi-Prize Stage 1": { "name": "Flying Pikachu VMAX", "hp": 310 },
     "Multi-Prize Stage 2": { "name": "Gardevoir ex", "hp": 150 }
@@ -813,10 +811,10 @@
   },
   "Destined Rivals": {
     "Basic": { "name": "Zamazenta", "hp": 130 },
-    "Stage 1": { "name": "Misty’s Gyarados", "hp": 180 },
-    "Stage 2": { "name": "Team Rocket’s Tyranitar", "hp": 180 },
-    "Multi-Prize Basic": { "name": "Team Rocket’s Mewtwo ex", "hp": 280 },
+    "Stage 1": { "name": "Misty's Gyarados", "hp": 180 },
+    "Stage 2": { "name": "Team Rocket's Tyranitar", "hp": 180 },
+    "Multi-Prize Basic": { "name": "Team Rocket's Mewtwo ex", "hp": 280 },
     "Multi-Prize Stage 1": { "name": "Cetitan ex", "hp": 300 },
-    "Multi-Prize Stage 2": { "name": "Steven’s Metagross ex", "hp": 340 }
+    "Multi-Prize Stage 2": { "name": "Steven's Metagross ex", "hp": 340 }
   }
 }
