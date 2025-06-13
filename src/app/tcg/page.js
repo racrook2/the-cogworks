@@ -3,6 +3,7 @@
 import sets from "@/json/sets.json";
 import data from "@/json/results.json";
 import dataSansWailord from "@/json/resultsSansWailord.json";
+import dataAverage from "@/json/resultsAverage.json";
 import {
     Chart,
     CategoryScale,
@@ -15,7 +16,7 @@ import {
 } from "chart.js";
 import { Line } from "react-chartjs-2";
 import { useState } from "react";
-import {Checkbox, FormControlLabel} from "@mui/material";
+import { Checkbox, FormControlLabel, FormGroup, Switch } from "@mui/material";
 
 Chart.register(
     CategoryScale,
@@ -29,9 +30,17 @@ Chart.register(
 
 export default function TCG() {
     const [sansWailord, setSansWailord] = useState(false);
+    const [sansWailordDisabled, setSansWailordDisabled] = useState(false);
+    const [averages, setAverages] = useState(false);
 
     function hpData(stage) {
-        const dataset = sansWailord ? dataSansWailord : data;
+        let dataset;
+
+        if (averages) {
+            dataset = dataAverage;
+        } else {
+            dataset = sansWailord ? dataSansWailord : data;
+        }
 
         return sets.map((set, i) => {
             if (dataset[set][stage]) {
@@ -116,15 +125,30 @@ export default function TCG() {
                     }
                 }}
             />
-            <FormControlLabel
-                label="Remove Wailord"
-                control={
-                    <Checkbox
-                        value={sansWailord}
-                        onClick={() => setSansWailord(!sansWailord)}
+            <FormGroup>
+                <div>
+                    Maximum
+                    <Switch
+                        value={averages}
+                        onClick={() => {
+                            setSansWailord(false);
+                            setSansWailordDisabled(!averages);
+                            setAverages(!averages);
+                        }}
                     />
-                }
-            />
+                    Average
+                </div>
+                <FormControlLabel
+                    label="Remove Wailord"
+                    control={
+                        <Checkbox
+                            checked={sansWailord}
+                            disabled={sansWailordDisabled}
+                            onClick={() => setSansWailord(!sansWailord)}
+                        />
+                    }
+                />
+            </FormGroup>
         </>
     );
 }

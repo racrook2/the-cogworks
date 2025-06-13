@@ -1,0 +1,822 @@
+{
+  "Base Set": {
+    "Basic": { "hp": "49.23" },
+    "Stage 1": { "hp": "72.27" },
+    "Stage 2": { "hp": "95.00" }
+  },
+  "Jungle": {
+    "Basic": { "hp": "58.15" },
+    "Stage 1": { "hp": "73.33" },
+    "Stage 2": { "hp": "81.11" }
+  },
+  "Fossil": {
+    "Basic": { "hp": "57.08" },
+    "Stage 1": { "hp": "64.80" },
+    "Stage 2": { "hp": "78.75" }
+  },
+  "Base Set 2": {
+    "Basic": { "hp": "52.59" },
+    "Stage 1": { "hp": "72.29" },
+    "Stage 2": { "hp": "89.09" }
+  },
+  "Team Rocket": {
+    "Basic": { "hp": "43.04" },
+    "Stage 1": { "hp": "57.88" },
+    "Stage 2": { "hp": "68.33" }
+  },
+  "Gym Heroes": {
+    "Basic": { "hp": "51.13" },
+    "Stage 1": { "hp": "68.75" },
+    "Stage 2": { "hp": "84.00" }
+  },
+  "Gym Challenge": {
+    "Basic": { "hp": "47.41" },
+    "Stage 1": { "hp": "71.82" },
+    "Stage 2": { "hp": "95.00" }
+  },
+  "Neo Genesis": {
+    "Baby": { "hp": "30.00" },
+    "Basic": { "hp": "50.71" },
+    "Stage 1": { "hp": "70.00" },
+    "Stage 2": { "hp": "93.00" }
+  },
+  "Neo Discovery": {
+    "Baby": { "hp": "30.00" },
+    "Basic": { "hp": "47.44" },
+    "Stage 1": { "hp": "72.11" },
+    "Stage 2": { "hp": "90.91" }
+  },
+  "Neo Revelation": {
+    "Baby": { "hp": "30.00" },
+    "Basic": { "hp": "55.53" },
+    "Stage 1": { "hp": "74.44" },
+    "Stage 2": { "hp": "85.00" }
+  },
+  "Neo Destiny": {
+    "Basic": { "hp": "51.57" },
+    "Stage 1": { "hp": "69.19" },
+    "Stage 2": { "hp": "81.11" }
+  },
+  "Expedition": {
+    "Baby": { "hp": "30.00" },
+    "Basic": { "hp": "49.64" },
+    "Stage 1": { "hp": "74.05" },
+    "Stage 2": { "hp": "101.00" }
+  },
+  "Aquapolis": {
+    "Baby": { "hp": "30.00" },
+    "Basic": { "hp": "53.19" },
+    "Stage 1": { "hp": "77.10" },
+    "Stage 2": { "hp": "100.56" }
+  },
+  "Skyridge": {
+    "Baby": { "hp": "30.00" },
+    "Basic": { "hp": "51.64" },
+    "Stage 1": { "hp": "75.63" },
+    "Stage 2": { "hp": "99.57" }
+  },
+  "Ruby & Sapphire": {
+    "Basic": { "hp": "47.57" },
+    "Stage 1": { "hp": "75.16" },
+    "Stage 2": { "hp": "103.64" },
+    "Rulebox Basic": { "hp": "95.00" }
+  },
+  "Sandstorm": {
+    "Basic": { "hp": "52.17" },
+    "Stage 1": { "hp": "74.24" },
+    "Stage 2": { "hp": "110.00" },
+    "Rulebox Stage 1": { "hp": "133.33" },
+    "Rulebox Stage 2": { "hp": "152.50" }
+  },
+  "Dragon": {
+    "Basic": { "hp": "49.79" },
+    "Stage 1": { "hp": "74.52" },
+    "Stage 2": { "hp": "113.33" },
+    "Rulebox Basic": { "hp": "96.67" },
+    "Rulebox Stage 1": { "hp": "100.00" },
+    "Rulebox Stage 2": { "hp": "152.50" }
+  },
+  "Team Magma vs Team Aqua": {
+    "Basic": { "hp": "53.41" },
+    "Stage 1": { "hp": "76.67" },
+    "Stage 2": { "hp": "120.00" },
+    "Rulebox Basic": { "hp": "100.00" },
+    "Rulebox Stage 2": { "hp": "150.00" }
+  },
+  "Hidden Legends": {
+    "Basic": { "hp": "53.80" },
+    "Stage 1": { "hp": "77.04" },
+    "Stage 2": { "hp": "108.57" },
+    "Rulebox Basic": { "hp": "96.00" },
+    "Rulebox Stage 1": { "hp": "95.00" },
+    "Rulebox Stage 2": { "hp": "145.00" }
+  },
+  "FireRed & LeafGreen": {
+    "Basic": { "hp": "54.29" },
+    "Stage 1": { "hp": "75.81" },
+    "Stage 2": { "hp": "108.57" },
+    "Rulebox Basic": { "hp": "98.00" },
+    "Rulebox Stage 1": { "hp": "106.67" },
+    "Rulebox Stage 2": { "hp": "152.50" }
+  },
+  "Team Rocket Returns": {
+    "Basic": { "hp": "53.48" },
+    "Stage 1": { "hp": "75.45" },
+    "Stage 2": { "hp": "111.43" },
+    "Rulebox Basic": { "hp": "97.00" },
+    "Rulebox Stage 1": { "hp": "120.00" }
+  },
+  "Deoxys": {
+    "Basic": { "hp": "54.49" },
+    "Stage 1": { "hp": "74.19" },
+    "Stage 2": { "hp": "105.00" },
+    "Rulebox Basic": { "hp": "100.00" },
+    "Rulebox Stage 1": { "hp": "103.33" },
+    "Rulebox Stage 2": { "hp": "145.00" }
+  },
+  "Emerald": {
+    "Basic": { "hp": "55.21" },
+    "Stage 1": { "hp": "76.36" },
+    "Stage 2": { "hp": "108.00" },
+    "Rulebox Basic": { "hp": "102.50" },
+    "Rulebox Stage 1": { "hp": "110.00" }
+  },
+  "Unseen Forces": {
+    "Basic": { "hp": "58.33" },
+    "Stage 1": { "hp": "73.85" },
+    "Stage 2": { "hp": "110.00" },
+    "Rulebox Basic": { "hp": "93.33" },
+    "Rulebox Stage 1": { "hp": "125.00" },
+    "Rulebox Stage 2": { "hp": "152.00" }
+  },
+  "Delta Species": {
+    "Basic": { "hp": "57.74" },
+    "Stage 1": { "hp": "72.19" },
+    "Stage 2": { "hp": "101.43" },
+    "Rulebox Stage 1": { "hp": "110.00" }
+  },
+  "Legend Maker": {
+    "Basic": { "hp": "58.57" },
+    "Stage 1": { "hp": "74.58" },
+    "Stage 2": { "hp": "107.78" },
+    "Rulebox Basic": { "hp": "90.00" },
+    "Rulebox Stage 1": { "hp": "105.00" },
+    "Rulebox Stage 2": { "hp": "150.00" }
+  },
+  "Holon Phantoms": {
+    "Basic": { "hp": "59.06" },
+    "Stage 1": { "hp": "75.20" },
+    "Stage 2": { "hp": "103.00" },
+    "Rulebox Basic": { "hp": "90.00" },
+    "Rulebox Stage 1": { "hp": "105.00" }
+  },
+  "Crystal Guardians": {
+    "Basic": { "hp": "49.73" },
+    "Stage 1": { "hp": "74.83" },
+    "Stage 2": { "hp": "113.33" },
+    "Rulebox Basic": { "hp": "96.67" },
+    "Rulebox Stage 1": { "hp": "90.00" },
+    "Rulebox Stage 2": { "hp": "146.67" }
+  },
+  "Dragon Frontiers": {
+    "Basic": { "hp": "48.78" },
+    "Stage 1": { "hp": "71.54" },
+    "Stage 2": { "hp": "111.67" },
+    "Rulebox Basic": { "hp": "103.33" },
+    "Rulebox Stage 1": { "hp": "100.00" },
+    "Rulebox Stage 2": { "hp": "150.00" }
+  },
+  "Power Keepers": {
+    "Basic": { "hp": "52.29" },
+    "Stage 1": { "hp": "73.57" },
+    "Stage 2": { "hp": "112.00" },
+    "Rulebox Basic": { "hp": "100.00" },
+    "Rulebox Stage 1": { "hp": "120.00" },
+    "Rulebox Stage 2": { "hp": "150.00" }
+  },
+  "Diamond & Pearl": {
+    "Basic": { "hp": "57.86" },
+    "Stage 1": { "hp": "86.00" },
+    "Stage 2": { "hp": "119.23" },
+    "Stage 3": { "hp": "140.00" }
+  },
+  "Mysterious Treasures": {
+    "Basic": { "hp": "57.41" },
+    "Stage 1": { "hp": "85.95" },
+    "Stage 2": { "hp": "123.13" }
+  },
+  "Secret Wonders": {
+    "Basic": { "hp": "58.81" },
+    "Stage 1": { "hp": "84.47" },
+    "Stage 2": { "hp": "120.71" },
+    "Stage 3": { "hp": "130.00" }
+  },
+  "Great Encounters": {
+    "Basic": { "hp": "61.43" },
+    "Stage 1": { "hp": "89.72" },
+    "Stage 2": { "hp": "118.75" }
+  },
+  "Majestic Dawn": {
+    "Basic": { "hp": "64.17" },
+    "Stage 1": { "hp": "84.00" },
+    "Stage 2": { "hp": "117.14" },
+    "Stage 3": { "hp": "135.00" }
+  },
+  "Legends Awakened": {
+    "Basic": { "hp": "65.79" },
+    "Stage 1": { "hp": "85.12" },
+    "Stage 2": { "hp": "123.85" },
+    "Stage 3": { "hp": "155.00" }
+  },
+  "Stormfront": {
+    "Basic": { "hp": "57.56" },
+    "Stage 1": { "hp": "93.03" },
+    "Stage 2": { "hp": "124.38" },
+    "Stage 3": { "hp": "145.00" }
+  },
+  "Platinum": {
+    "Basic": { "hp": "71.97" },
+    "Stage 1": { "hp": "92.29" },
+    "Stage 2": { "hp": "128.57" }
+  },
+  "Rising Rivals": {
+    "Basic": { "hp": "75.94" },
+    "Stage 1": { "hp": "88.00" },
+    "Stage 2": { "hp": "121.00" },
+    "Stage 3": { "hp": "112.00" }
+  },
+  "Supreme Victors": {
+    "Basic": { "hp": "67.58" },
+    "Stage 1": { "hp": "89.44" },
+    "Stage 2": { "hp": "131.43" },
+    "Stage 3": { "hp": "110.00" }
+  },
+  "Arceus": {
+    "Basic": { "hp": "62.04" },
+    "Stage 1": { "hp": "89.19" },
+    "Stage 2": { "hp": "127.27" },
+    "Stage 3": { "hp": "150.00" }
+  },
+  "HeartGold & SoulSilver": {
+    "Basic": { "hp": "55.88" },
+    "Stage 1": { "hp": "92.35" },
+    "Stage 2": { "hp": "129.00" },
+    "Rulebox Basic": { "hp": "135.00" }
+  },
+  "Unleashed": {
+    "Basic": { "hp": "61.84" },
+    "Stage 1": { "hp": "90.77" },
+    "Stage 2": { "hp": "130.00" },
+    "Rulebox Basic": { "hp": "153.33" }
+  },
+  "Undaunted": {
+    "Basic": { "hp": "58.65" },
+    "Stage 1": { "hp": "90.00" },
+    "Stage 2": { "hp": "120.00" },
+    "Rulebox Basic": { "hp": "145.00" }
+  },
+  "Triumphant": {
+    "Basic": { "hp": "57.23" },
+    "Stage 1": { "hp": "90.00" },
+    "Stage 2": { "hp": "131.67" },
+    "Rulebox Basic": { "hp": "155.00" }
+  },
+  "Call of Legends": {
+    "Basic": { "hp": "70.71" },
+    "Stage 1": { "hp": "90.80" },
+    "Stage 2": { "hp": "126.00" }
+  },
+  "Black & White": {
+    "Basic": { "hp": "70.20" },
+    "Stage 1": { "hp": "87.10" },
+    "Stage 2": { "hp": "135.00" }
+  },
+  "Emerging Powers": {
+    "Basic": { "hp": "70.41" },
+    "Stage 1": { "hp": "91.52" },
+    "Stage 2": { "hp": "133.33" }
+  },
+  "Noble Victories": {
+    "Basic": { "hp": "72.31" },
+    "Stage 1": { "hp": "89.64" },
+    "Stage 2": { "hp": "131.43" }
+  },
+  "Next Destinies": {
+    "Basic": { "hp": "74.42" },
+    "Stage 1": { "hp": "95.94" },
+    "Stage 2": { "hp": "132.50" },
+    "Rulebox Basic": { "hp": "166.67" }
+  },
+  "Dark Explorers": {
+    "Basic": { "hp": "62.44" },
+    "Stage 1": { "hp": "95.00" },
+    "Stage 2": { "hp": "136.67" },
+    "Rulebox Basic": { "hp": "175.00" }
+  },
+  "Dragons Exalted": {
+    "Basic": { "hp": "66.42" },
+    "Stage 1": { "hp": "93.25" },
+    "Stage 2": { "hp": "133.53" },
+    "Rulebox Basic": { "hp": "165.00" }
+  },
+  "Dragon Vault": {
+    "Basic": { "hp": "78.00" },
+    "Stage 1": { "hp": "74.00" },
+    "Stage 2": { "hp": "143.33" }
+  },
+  "Boundaries Crossed": {
+    "Basic": { "hp": "69.13" },
+    "Stage 1": { "hp": "92.14" },
+    "Stage 2": { "hp": "139.17" },
+    "Rulebox Basic": { "hp": "165.00" }
+  },
+  "Plasma Storm": {
+    "Basic": { "hp": "65.09" },
+    "Stage 1": { "hp": "90.81" },
+    "Stage 2": { "hp": "140.00" },
+    "Rulebox Basic": { "hp": "165.00" }
+  },
+  "Plasma Freeze": {
+    "Basic": { "hp": "69.32" },
+    "Stage 1": { "hp": "92.97" },
+    "Stage 2": { "hp": "136.67" },
+    "Rulebox Basic": { "hp": "171.67" }
+  },
+  "Plasma Blast": {
+    "Basic": { "hp": "69.46" },
+    "Stage 1": { "hp": "91.67" },
+    "Stage 2": { "hp": "133.85" },
+    "Rulebox Basic": { "hp": "160.00" }
+  },
+  "Legendary Treasures": {
+    "Basic": { "hp": "77.20" },
+    "Stage 1": { "hp": "90.00" },
+    "Stage 2": { "hp": "135.71" },
+    "Rulebox Basic": { "hp": "156.88" }
+  },
+  "Kalos Starter Set": {
+    "Basic": { "hp": "69.17" },
+    "Stage 1": { "hp": "88.33" },
+    "Stage 2": { "hp": "143.33" }
+  },
+  "XY": {
+    "Basic": { "hp": "66.23" },
+    "Stage 1": { "hp": "91.50" },
+    "Stage 2": { "hp": "140.00" },
+    "Rulebox Basic": { "hp": "163.33" },
+    "Rulebox Stage 1": { "hp": "225.00" }
+  },
+  "Flashfire": {
+    "Basic": { "hp": "64.52" },
+    "Stage 1": { "hp": "90.71" },
+    "Stage 2": { "hp": "136.67" },
+    "Rulebox Basic": { "hp": "177.78" },
+    "Rulebox Stage 1": { "hp": "226.67" }
+  },
+  "Furious Fists": {
+    "Basic": { "hp": "71.25" },
+    "Stage 1": { "hp": "97.33" },
+    "Stage 2": { "hp": "138.00" },
+    "Rulebox Basic": { "hp": "172.22" },
+    "Rulebox Stage 1": { "hp": "220.00" }
+  },
+  "Phantom Forces": {
+    "Basic": { "hp": "68.14" },
+    "Stage 1": { "hp": "91.67" },
+    "Stage 2": { "hp": "136.67" },
+    "Rulebox Basic": { "hp": "170.00" },
+    "Rulebox Stage 1": { "hp": "214.00" }
+  },
+  "Primal Clash": {
+    "Basic": { "hp": "66.12" },
+    "Stage 1": { "hp": "96.19" },
+    "Stage 2": { "hp": "138.89" },
+    "Rulebox Basic": { "hp": "186.25" },
+    "Rulebox Stage 1": { "hp": "232.50" }
+  },
+  "Double Crisis": {
+    "Basic": { "hp": "66.00" },
+    "Stage 1": { "hp": "97.50" },
+    "Stage 2": { "hp": "140.00" },
+    "Rulebox Basic": { "hp": "190.00" }
+  },
+  "Roaring Skies": {
+    "Basic": { "hp": "70.53" },
+    "Stage 1": { "hp": "84.09" },
+    "Stage 2": { "hp": "140.00" },
+    "Rulebox Basic": { "hp": "159.29" },
+    "Rulebox Stage 1": { "hp": "221.43" }
+  },
+  "Ancient Origins": {
+    "Basic": { "hp": "72.22" },
+    "Stage 1": { "hp": "95.91" },
+    "Stage 2": { "hp": "136.25" },
+    "Rulebox Basic": { "hp": "173.75" },
+    "Rulebox Stage 1": { "hp": "228.89" }
+  },
+  "BREAKthrough": {
+    "Basic": { "hp": "65.97" },
+    "Stage 1": { "hp": "91.54" },
+    "Stage 2": { "hp": "139.38" },
+    "Stage 3": { "hp": "165.00" },
+    "Rulebox Basic": { "hp": "170.00" },
+    "Rulebox Stage 1": { "hp": "217.50" }
+  },
+  "BREAKpoint": {
+    "Basic": { "hp": "67.14" },
+    "Stage 1": { "hp": "96.00" },
+    "Stage 2": { "hp": "139.00" },
+    "Stage 3": { "hp": "170.00" },
+    "Rulebox Basic": { "hp": "169.38" },
+    "Rulebox Stage 1": { "hp": "230.00" }
+  },
+  "Generations": {
+    "Basic": { "hp": "69.77" },
+    "Stage 1": { "hp": "89.52" },
+    "Stage 2": { "hp": "144.00" },
+    "Rulebox Basic": { "hp": "171.33" },
+    "Rulebox Stage 1": { "hp": "220.00" }
+  },
+  "Fates Collide": {
+    "Basic": { "hp": "72.56" },
+    "Stage 1": { "hp": "98.89" },
+    "Stage 2": { "hp": "133.75" },
+    "Stage 3": { "hp": "160.00" },
+    "Rulebox Basic": { "hp": "172.11" },
+    "Rulebox Stage 1": { "hp": "216.00" }
+  },
+  "Steam Siege": {
+    "Basic": { "hp": "70.75" },
+    "Stage 1": { "hp": "97.94" },
+    "Stage 2": { "hp": "137.86" },
+    "Stage 3": { "hp": "166.67" },
+    "Rulebox Basic": { "hp": "173.00" },
+    "Rulebox Stage 1": { "hp": "225.00" }
+  },
+  "Evolutions": {
+    "Basic": { "hp": "63.51" },
+    "Stage 1": { "hp": "90.00" },
+    "Stage 2": { "hp": "141.43" },
+    "Stage 3": { "hp": "185.00" },
+    "Rulebox Basic": { "hp": "178.00" },
+    "Rulebox Stage 1": { "hp": "222.22" }
+  },
+  "Sun & Moon": {
+    "Basic": { "hp": "70.36" },
+    "Stage 1": { "hp": "100.53" },
+    "Stage 2": { "hp": "146.92" },
+    "Rulebox Basic": { "hp": "185.00" },
+    "Rulebox Stage 1": { "hp": "204.29" },
+    "Rulebox Stage 2": { "hp": "248.89" }
+  },
+  "Guardians Rising": {
+    "Basic": { "hp": "72.06" },
+    "Stage 1": { "hp": "107.50" },
+    "Stage 2": { "hp": "147.27" },
+    "Rulebox Basic": { "hp": "182.00" },
+    "Rulebox Stage 1": { "hp": "204.38" },
+    "Rulebox Stage 2": { "hp": "244.29" }
+  },
+  "Burning Shadows": {
+    "Basic": { "hp": "75.08" },
+    "Stage 1": { "hp": "102.50" },
+    "Stage 2": { "hp": "141.11" },
+    "Rulebox Basic": { "hp": "175.00" },
+    "Rulebox Stage 1": { "hp": "206.25" },
+    "Rulebox Stage 2": { "hp": "242.00" }
+  },
+  "Shining Legends": {
+    "Basic": { "hp": "87.75" },
+    "Stage 1": { "hp": "105.45" },
+    "Stage 2": { "hp": "163.33" },
+    "Rulebox Basic": { "hp": "185.56" },
+    "Rulebox Stage 1": { "hp": "210.00" }
+  },
+  "Crimson Invasion": {
+    "Basic": { "hp": "75.43" },
+    "Stage 1": { "hp": "105.16" },
+    "Stage 2": { "hp": "151.43" },
+    "Rulebox Basic": { "hp": "188.82" },
+    "Rulebox Stage 1": { "hp": "222.00" },
+    "Rulebox Stage 2": { "hp": "250.00" }
+  },
+  "Ultra Prism": {
+    "Basic": { "hp": "79.29" },
+    "Stage 1": { "hp": "104.47" },
+    "Stage 2": { "hp": "153.00" },
+    "Rulebox Basic": { "hp": "182.63" },
+    "Rulebox Stage 1": { "hp": "201.11" },
+    "Rulebox Stage 2": { "hp": "250.00" }
+  },
+  "Forbidden Light": {
+    "Basic": { "hp": "77.00" },
+    "Stage 1": { "hp": "105.00" },
+    "Stage 2": { "hp": "150.00" },
+    "Rulebox Basic": { "hp": "185.79" },
+    "Rulebox Stage 1": { "hp": "210.00" },
+    "Rulebox Stage 2": { "hp": "230.00" }
+  },
+  "Celestial Storm": {
+    "Basic": { "hp": "78.03" },
+    "Stage 1": { "hp": "103.45" },
+    "Stage 2": { "hp": "153.33" },
+    "Rulebox Basic": { "hp": "171.33" },
+    "Rulebox Stage 1": { "hp": "197.86" },
+    "Rulebox Stage 2": { "hp": "240.00" }
+  },
+  "Dragon Majesty": {
+    "Basic": { "hp": "75.29" },
+    "Stage 1": { "hp": "98.33" },
+    "Stage 2": { "hp": "155.00" },
+    "Rulebox Basic": { "hp": "184.29" },
+    "Rulebox Stage 1": { "hp": "200.00" },
+    "Rulebox Stage 2": { "hp": "243.33" }
+  },
+  "Lost Thunder": {
+    "Basic": { "hp": "80.40" },
+    "Stage 1": { "hp": "104.65" },
+    "Stage 2": { "hp": "136.00" },
+    "Rulebox Basic": { "hp": "177.78" },
+    "Rulebox Stage 1": { "hp": "205.00" },
+    "Rulebox Stage 2": { "hp": "240.00" }
+  },
+  "Team Up": {
+    "Basic": { "hp": "74.18" },
+    "Stage 1": { "hp": "105.00" },
+    "Stage 2": { "hp": "150.83" },
+    "Rulebox Basic": { "hp": "238.15" },
+    "Rulebox Stage 1": { "hp": "200.00" },
+    "Rulebox Stage 2": { "hp": "245.00" }
+  },
+  "Detective Pikachu": {
+    "Basic": { "hp": "72.50" },
+    "Stage 1": { "hp": "120.00" },
+    "Stage 2": { "hp": "160.00" }
+  },
+  "Unbroken Bonds": {
+    "Basic": { "hp": "70.85" },
+    "Stage 1": { "hp": "102.88" },
+    "Stage 2": { "hp": "146.67" },
+    "Rulebox Basic": { "hp": "244.55" },
+    "Rulebox Stage 1": { "hp": "200.00" },
+    "Rulebox Stage 2": { "hp": "240.00" }
+  },
+  "Unified Minds": {
+    "Basic": { "hp": "77.62" },
+    "Stage 1": { "hp": "106.42" },
+    "Stage 2": { "hp": "145.71" },
+    "Rulebox Basic": { "hp": "231.84" },
+    "Rulebox Stage 1": { "hp": "208.57" },
+    "Rulebox Stage 2": { "hp": "250.00" }
+  },
+  "Hidden Fates": {
+    "Basic": { "hp": "77.67" },
+    "Stage 1": { "hp": "106.67" },
+    "Stage 2": { "hp": "150.00" },
+    "Rulebox Basic": { "hp": "243.33" },
+    "Rulebox Stage 1": { "hp": "210.00" },
+    "Rulebox Stage 2": { "hp": "250.00" }
+  },
+  "Cosmic Eclipse": {
+    "Basic": { "hp": "77.06" },
+    "Stage 1": { "hp": "110.32" },
+    "Stage 2": { "hp": "155.63" },
+    "Rulebox Basic": { "hp": "254.12" },
+    "Rulebox Stage 1": { "hp": "206.67" },
+    "Rulebox Stage 2": { "hp": "240.00" }
+  },
+  "Sword & Shield": {
+    "Basic": { "hp": "79.08" },
+    "Stage 1": { "hp": "111.74" },
+    "Stage 2": { "hp": "162.50" },
+    "Rulebox Basic": { "hp": "206.13" },
+    "Rulebox Stage 1": { "hp": "322.50" }
+  },
+  "Rebel Clash": {
+    "Basic": { "hp": "76.76" },
+    "Stage 1": { "hp": "113.46" },
+    "Stage 2": { "hp": "153.33" },
+    "Rulebox Basic": { "hp": "203.33" },
+    "Rulebox Stage 1": { "hp": "322.86" }
+  },
+  "Darkness Ablaze": {
+    "Basic": { "hp": "73.88" },
+    "Stage 1": { "hp": "113.15" },
+    "Stage 2": { "hp": "155.00" },
+    "Rulebox Basic": { "hp": "207.39" },
+    "Rulebox Stage 1": { "hp": "321.67" }
+  },
+  "Champion's Path": {
+    "Basic": { "hp": "71.05" },
+    "Stage 1": { "hp": "109.17" },
+    "Stage 2": { "hp": "157.50" },
+    "Rulebox Basic": { "hp": "210.00" },
+    "Rulebox Stage 1": { "hp": "320.00" }
+  },
+  "Vivid Voltage": {
+    "Basic": { "hp": "82.11" },
+    "Stage 1": { "hp": "110.00" },
+    "Stage 2": { "hp": "155.45" },
+    "Rulebox Basic": { "hp": "207.50" },
+    "Rulebox Stage 1": { "hp": "316.67" }
+  },
+  "Shining Fates": {
+    "Basic": { "hp": "76.25" },
+    "Stage 1": { "hp": "109.23" },
+    "Stage 2": { "hp": "157.14" },
+    "Rulebox Basic": { "hp": "195.26" },
+    "Rulebox Stage 1": { "hp": "320.67" }
+  },
+  "Battle Styles": {
+    "Basic": { "hp": "77.17" },
+    "Stage 1": { "hp": "111.00" },
+    "Stage 2": { "hp": "148.18" },
+    "Rulebox Basic": { "hp": "206.43" },
+    "Rulebox Stage 1": { "hp": "322.86" }
+  },
+  "Chilling Reign": {
+    "Basic": { "hp": "78.57" },
+    "Stage 1": { "hp": "109.21" },
+    "Stage 2": { "hp": "153.57" },
+    "Rulebox Basic": { "hp": "213.17" },
+    "Rulebox Stage 1": { "hp": "320.00" }
+  },
+  "Evolving Skies": {
+    "Basic": { "hp": "77.00" },
+    "Stage 1": { "hp": "104.86" },
+    "Stage 2": { "hp": "152.31" },
+    "Rulebox Basic": { "hp": "209.41" },
+    "Rulebox Stage 1": { "hp": "318.13" }
+  },
+  "Celebrations": {
+    "Baby": { "hp": "30.00" },
+    "Basic": { "hp": "100.00" },
+    "Stage 1": { "hp": "90.00" },
+    "Stage 2": { "hp": "130.00" },
+    "Stage 3": { "hp": "110.00" },
+    "Rulebox Basic": { "hp": "178.75" },
+    "Rulebox Stage 1": { "hp": "280.00" },
+    "Rulebox Stage 2": { "hp": "150.00" }
+  },
+  "Fusion Strike": {
+    "Basic": { "hp": "77.88" },
+    "Stage 1": { "hp": "114.23" },
+    "Stage 2": { "hp": "158.46" },
+    "Rulebox Basic": { "hp": "204.38" },
+    "Rulebox Stage 1": { "hp": "318.13" }
+  },
+  "Brilliant Stars": {
+    "Basic": { "hp": "78.47" },
+    "Stage 1": { "hp": "108.57" },
+    "Stage 2": { "hp": "158.33" },
+    "Rulebox Basic": { "hp": "204.55" },
+    "Rulebox Stage 1": { "hp": "294.74" }
+  },
+  "Astral Radiance": {
+    "Basic": { "hp": "80.85" },
+    "Stage 1": { "hp": "112.61" },
+    "Stage 2": { "hp": "158.46" },
+    "Rulebox Basic": { "hp": "209.18" },
+    "Rulebox Stage 1": { "hp": "288.40" }
+  },
+  "Pokémon GO": {
+    "Basic": { "hp": "87.10" },
+    "Stage 1": { "hp": "122.78" },
+    "Stage 2": { "hp": "168.00" },
+    "Rulebox Basic": { "hp": "228.46" },
+    "Rulebox Stage 1": { "hp": "294.29" }
+  },
+  "Lost Origin": {
+    "Basic": { "hp": "81.03" },
+    "Stage 1": { "hp": "107.66" },
+    "Stage 2": { "hp": "147.78" },
+    "Rulebox Basic": { "hp": "208.06" },
+    "Rulebox Stage 1": { "hp": "288.64" }
+  },
+  "Silver Tempest": {
+    "Basic": { "hp": "76.40" },
+    "Stage 1": { "hp": "107.20" },
+    "Stage 2": { "hp": "150.71" },
+    "Rulebox Basic": { "hp": "210.25" },
+    "Rulebox Stage 1": { "hp": "285.00" }
+  },
+  "Crown Zenith": {
+    "Basic": { "hp": "84.27" },
+    "Stage 1": { "hp": "115.00" },
+    "Stage 2": { "hp": "153.33" },
+    "Rulebox Basic": { "hp": "211.15" },
+    "Rulebox Stage 1": { "hp": "285.67" }
+  },
+  "Scarlet & Violet": {
+    "Basic": { "hp": "73.39" },
+    "Stage 1": { "hp": "111.02" },
+    "Stage 2": { "hp": "152.31" },
+    "Rulebox Basic": { "hp": "229.29" },
+    "Rulebox Stage 1": { "hp": "266.15" },
+    "Rulebox Stage 2": { "hp": "318.00" }
+  },
+  "Paldea Evolved": {
+    "Basic": { "hp": "75.48" },
+    "Stage 1": { "hp": "107.83" },
+    "Stage 2": { "hp": "157.86" },
+    "Rulebox Basic": { "hp": "205.50" },
+    "Rulebox Stage 1": { "hp": "274.29" },
+    "Rulebox Stage 2": { "hp": "320.00" }
+  },
+  "Obsidian Flames": {
+    "Basic": { "hp": "71.40" },
+    "Stage 1": { "hp": "116.67" },
+    "Stage 2": { "hp": "157.00" },
+    "Rulebox Basic": { "hp": "212.22" },
+    "Rulebox Stage 1": { "hp": "272.31" },
+    "Rulebox Stage 2": { "hp": "315.83" }
+  },
+  "151": {
+    "Basic": { "hp": "74.13" },
+    "Stage 1": { "hp": "105.74" },
+    "Stage 2": { "hp": "153.57" },
+    "Rulebox Basic": { "hp": "200.00" },
+    "Rulebox Stage 1": { "hp": "260.00" },
+    "Rulebox Stage 2": { "hp": "327.86" }
+  },
+  "Paradox Rift": {
+    "Basic": { "hp": "79.56" },
+    "Stage 1": { "hp": "108.72" },
+    "Stage 2": { "hp": "147.50" },
+    "Rulebox Basic": { "hp": "220.45" },
+    "Rulebox Stage 1": { "hp": "257.37" },
+    "Rulebox Stage 2": { "hp": "321.11" }
+  },
+  "Paldean Fates": {
+    "Basic": { "hp": "70.09" },
+    "Stage 1": { "hp": "109.86" },
+    "Stage 2": { "hp": "143.33" },
+    "Rulebox Basic": { "hp": "206.67" },
+    "Rulebox Stage 1": { "hp": "266.67" },
+    "Rulebox Stage 2": { "hp": "311.43" }
+  },
+  "Temporal Forces": {
+    "Basic": { "hp": "83.72" },
+    "Stage 1": { "hp": "117.40" },
+    "Stage 2": { "hp": "157.00" },
+    "Rulebox Basic": { "hp": "228.08" },
+    "Rulebox Stage 1": { "hp": "260.00" },
+    "Rulebox Stage 2": { "hp": "323.33" }
+  },
+  "Twilight Masquerade": {
+    "Basic": { "hp": "79.66" },
+    "Stage 1": { "hp": "109.00" },
+    "Stage 2": { "hp": "157.00" },
+    "Rulebox Basic": { "hp": "219.52" },
+    "Rulebox Stage 1": { "hp": "282.22" },
+    "Rulebox Stage 2": { "hp": "312.86" }
+  },
+  "Shrouded Fable": {
+    "Basic": { "hp": "91.67" },
+    "Stage 1": { "hp": "112.38" },
+    "Stage 2": { "hp": "154.00" },
+    "Rulebox Basic": { "hp": "213.08" },
+    "Rulebox Stage 1": { "hp": "280.00" },
+    "Rulebox Stage 2": { "hp": "310.00" }
+  },
+  "Stellar Crown": {
+    "Basic": { "hp": "80.51" },
+    "Stage 1": { "hp": "118.33" },
+    "Stage 2": { "hp": "160.00" },
+    "Rulebox Basic": { "hp": "224.29" },
+    "Rulebox Stage 1": { "hp": "258.00" },
+    "Rulebox Stage 2": { "hp": "326.67" }
+  },
+  "Surging Sparks": {
+    "Basic": { "hp": "85.23" },
+    "Stage 1": { "hp": "114.29" },
+    "Stage 2": { "hp": "151.25" },
+    "Rulebox Basic": { "hp": "200.00" },
+    "Rulebox Stage 1": { "hp": "281.76" },
+    "Rulebox Stage 2": { "hp": "327.14" }
+  },
+  "Prismatic Evolutions": {
+    "Basic": { "hp": "89.27" },
+    "Stage 1": { "hp": "117.20" },
+    "Stage 2": { "hp": "160.00" },
+    "Rulebox Basic": { "hp": "218.71" },
+    "Rulebox Stage 1": { "hp": "273.33" },
+    "Rulebox Stage 2": { "hp": "327.50" }
+  },
+  "Journey Together": {
+    "Basic": { "hp": "81.46" },
+    "Stage 1": { "hp": "117.33" },
+    "Stage 2": { "hp": "162.22" },
+    "Rulebox Basic": { "hp": "210.77" },
+    "Rulebox Stage 1": { "hp": "274.62" },
+    "Rulebox Stage 2": { "hp": "326.67" }
+  },
+  "Destined Rivals": {
+    "Basic": { "hp": "76.88" },
+    "Stage 1": { "hp": "118.07" },
+    "Stage 2": { "hp": "158.46" },
+    "Rulebox Basic": { "hp": "245.33" },
+    "Rulebox Stage 1": { "hp": "275.38" },
+    "Rulebox Stage 2": { "hp": "322.00" }
+  }
+}
