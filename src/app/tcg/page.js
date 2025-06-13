@@ -94,22 +94,22 @@ export default function TCG() {
                             backgroundColor: "#abe0e0"
                         },
                         {
-                            label: "Rulebox Basic",
-                            data: hpData("Rulebox Basic"),
+                            label: "Multi-Prize Basic",
+                            data: hpData("Multi-Prize Basic"),
                             borderWidth: 1,
                             borderColor: "#c3a5ff",
                             backgroundColor: "#d0b7ff"
                         },
                         {
-                            label: "Rulebox Stage 1",
-                            data: hpData("Rulebox Stage 1"),
+                            label: "Multi-Prize Stage 1",
+                            data: hpData("Multi-Prize Stage 1"),
                             borderWidth: 1,
                             borderColor: "#dfe0e2",
                             backgroundColor: "#e4e5e7"
                         },
                         {
-                            label: "Rulebox Stage 2",
-                            data: hpData("Rulebox Stage 2"),
+                            label: "Multi-Prize Stage 2",
+                            data: hpData("Multi-Prize Stage 2"),
                             borderWidth: 1,
                             borderColor: "#8ec7f4",
                             backgroundColor: "#a0d0f6"

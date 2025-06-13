@@ -15,9 +15,9 @@ sets.forEach(set => {
     "Stage 1": { ...init },
     "Stage 2": { ...init },
     "Stage 3": { ...init },
-    "Rulebox Basic": { ...init },
-    "Rulebox Stage 1": { ...init },
-    "Rulebox Stage 2": { ...init }
+    "Multi-Prize Basic": { ...init },
+    "Multi-Prize Stage 1": { ...init },
+    "Multi-Prize Stage 2": { ...init }
   }
 });
 
@@ -34,8 +34,8 @@ cards.forEach(card => {
         card.name.endsWith("VSTAR") ||
         (card.name === "Unown V" && parseInt(card.hp) > 120)
       ) {
-        records[card.set][`Rulebox ${card.stage}`].hp += parseInt(card.hp);
-        records[card.set][`Rulebox ${card.stage}`].count++;
+        records[card.set][`Multi-Prize ${card.stage}`].hp += parseInt(card.hp);
+        records[card.set][`Multi-Prize ${card.stage}`].count++;
       } else {
         records[card.set][card.stage].hp += parseInt(card.hp);
         records[card.set][card.stage].count++;
@@ -52,8 +52,8 @@ cards.forEach(card => {
         card.name.endsWith("VMAX") ||
         card.name.endsWith("VSTAR")
       ) {
-        if (parseInt(card.hp) > parseInt(records[card.set][`Rulebox ${card.stage}`].hp)) {
-          records[card.set][`Rulebox ${card.stage}`] = {
+        if (parseInt(card.hp) > parseInt(records[card.set][`Multi-Prize ${card.stage}`].hp)) {
+          records[card.set][`Multi-Prize ${card.stage}`] = {
             name: card.name,
             hp: card.hp
           };
